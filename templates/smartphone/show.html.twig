@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Smartphone{% endblock %}
+
+{% block body %}
+    <h1>Smartphone</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ smartphone.id }}</td>
+            </tr>
+            <tr>
+                <th>SerialNumber</th>
+                <td>{{ smartphone.serialNumber }}</td>
+            </tr>
+            <tr>
+                <th>IsSold</th>
+                <td>{{ smartphone.isSold ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>HasCharger</th>
+                <td>{{ smartphone.hasCharger ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>CreatedAt</th>
+                <td>{{ smartphone.createdAt ? smartphone.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>UpdatedAt</th>
+                <td>{{ smartphone.updatedAt ? smartphone.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_smartphone_index') }}">back to list</a>
+
+    <a href="{{ path('app_smartphone_edit', {'id': smartphone.id}) }}">edit</a>
+
+    {{ include('smartphone/_delete_form.html.twig') }}
+{% endblock %}
