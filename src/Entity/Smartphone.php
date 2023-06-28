@@ -16,7 +16,7 @@ class Smartphone
     private ?int $id = null;
 
     #[ORM\Column(length: 100, nullable: true)]
-    private ?string $serialNumber = null;
+    private ?string $model = null;
 
     #[ORM\Column(nullable: true)]
     private ?bool $isSold = null;
@@ -32,14 +32,14 @@ class Smartphone
         return $this->id;
     }
 
-    public function getSerialNumber(): ?string
+    public function getmodel(): ?string
     {
-        return $this->serialNumber;
+        return $this->model;
     }
 
-    public function setSerialNumber(?string $serialNumber): static
+    public function setmodel(?string $model): static
     {
-        $this->serialNumber = $serialNumber;
+        $this->model = $model;
 
         return $this;
     }
