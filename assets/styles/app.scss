@@ -2,6 +2,13 @@
 @import "_includes/variables";
 @import "_includes/inputs";
 @import "_includes/buttons";
-body {
-    background-color: lightgray;
+@import "_includes/show_smartphone";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
 }

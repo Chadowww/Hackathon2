@@ -3,40 +3,60 @@
 {% block title %}Smartphone{% endblock %}
 
 {% block body %}
-    <h1>Smartphone</h1>
+{#	{{ dump(details.data.items[0]) }}#}
+<section class="ce-main-container w-75 m-auto">
+	<div class="ec-container-characteristic container d-flex w-75">
+		<div class="ec-img-phone d-flex justify-content-center">
+			<img src="{{ details.data.items[0].image.front }}" alt="">
+		</div>
+		<div class="ec-caracteristics-phone d-flex flex-column justify-content-center ">
+			<h1>{{ details.data.items[0].product.model }} </h1>
+			<h2>Model-number : <span class="font-weight-light">TODO</span></h2>
+			<h2>Système d'exploitation : <span class="font-weight-light">{{ details.data.items[0].key_aspects.os}}</span></h2>
+			<h2>RAM : <span class="font-weight-light">{{ details.data.items[0].key_aspects.ram}}</span></h2>
+			<h2>Capacité de stockage : <span class="font-weight-light">{{ details.data.items[0].key_aspects.storage}}</span></h2>
+			<div class="ec-bottom-card d-flex justify-content-around my-5">
+				<div class="ec-primary-button">ETAT :TODO</div>
+				<div class="ec-primary-button">CABLE DE CHARGE:TODO</div>
+			</div>
+		</div>
+	</div>
 
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ smartphone.id }}</td>
-            </tr>
-            <tr>
-                <th>SerialNumber</th>
-                <td>{{ smartphone.serialNumber }}</td>
-            </tr>
-            <tr>
-                <th>IsSold</th>
-                <td>{{ smartphone.isSold ? 'Yes' : 'No' }}</td>
-            </tr>
-            <tr>
-                <th>HasCharger</th>
-                <td>{{ smartphone.hasCharger ? 'Yes' : 'No' }}</td>
-            </tr>
-            <tr>
-                <th>CreatedAt</th>
-                <td>{{ smartphone.createdAt ? smartphone.createdAt|date('Y-m-d H:i:s') : '' }}</td>
-            </tr>
-            <tr>
-                <th>UpdatedAt</th>
-                <td>{{ smartphone.updatedAt ? smartphone.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
-            </tr>
-        </tbody>
-    </table>
+	<div class="ec-parent-grid w-50 m-auto">
+		<div class="ec-circle-category">
+			<div class="ec-circle-content-top d-flex justify-content-evenly flex-column align-items-center">
+				<h3>Catégorie</h3>
+				<h5 class="display-2">TODO</h5>
+			</div>
+		</div>
+		<div class="ec-left-circle flex-column">
+				<div class="ec-circle-content  d-flex flex-column justify-content-center align-items-center">
+					<h5>
+						{{ details.data.items[0].key_aspects.release_date}}
+					</h5>
+			</div>
+			<p class="ce-title-circle">sortie</p>
 
-    <a href="{{ path('app_smartphone_index') }}">back to list</a>
+		</div>
+		<div class="ec-right-circle flex-column">
+			<div class="ec-circle-content d-flex flex-column justify-content-center align-items-center">
+				<h5>
+					23 TODO
+				</h5>
+			</div>
+			<p class="ce-title-circle">RAM</p>
+		</div>
+		<div class="ec-bottom-circle flex-column">
+			<div class="ec-circle-content d-flex flex-column justify-content-center align-items-center">
+				<h5>
+					23 TODO
+				</h5>
+			</div>
+			<p class="ce-title-cirle">stockage</p>
+		</div>
+	</div>
+	<a href="" class="d-flex justify-content-center"><button class="ec-secondary-button m-auto display-5 p-3">Enregistrer un nouvel	appareil</button></a>
+</section>
 
-    <a href="{{ path('app_smartphone_edit', {'id': smartphone.id}) }}">edit</a>
 
-    {{ include('smartphone/_delete_form.html.twig') }}
 {% endblock %}
