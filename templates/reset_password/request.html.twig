@@ -8,8 +8,9 @@
 {% for flash_error in app.flashes('reset_password_error') %}
         <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
     {% endfor %}
-    <h1>Reset your password</h1>
+    <h1>Mot de passe oublié?</h1>
 
+    <p>Pour réinitialiser votre mot de passe, renseignez votre adresse mailgi</p>
     {{ form_start(requestForm,{ 'attr': { 'class': 'ce-form-login p-4 w-25 my-5 d-flex justify-content-center
     flex-column '} }) }}
         {{ form_row(requestForm.email, {'label_attr': {'class': 'sr-only'},'attr':{'class' : 'ema-input-main p-2
