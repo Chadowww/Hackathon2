@@ -13,9 +13,5 @@ require('bootstrap');
 // require('bootstrap/js/dist/tooltip');
 // require('bootstrap/js/dist/popover');
 
-$(document).ready(function() {
-    $('[data-toggle="popover"]').popover();
-});
-
 // any CSS you import will output into a single css file (app.scss in this case)
 import './styles/app.scss';

@@ -2,6 +2,6 @@
 @import "_includes/variables";
 @import "_includes/inputs";
 @import "_includes/buttons";
-body {
-    background-color: lightgray;
-}
+@import "modules/navbar";
+
+
