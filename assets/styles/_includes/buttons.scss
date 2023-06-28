@@ -1,0 +1,33 @@
+.ema-primary-button{
+  border-radius:$border-radius-tertiary-button ;
+  background-color: $primary-color;
+  color: white;
+  font-size: 22px;
+  align-items: center;
+}
+.ema-secondary-button{
+  border-radius:$border-radius-primary-button ;
+  background-color: $secondary-color;
+  color: white;
+}
+.ema-tertiary-button{
+  border-radius:$border-radius-primary-button ;
+}
+
+.ema-button-storage{
+  width: 88px;
+  height: 50px;
+  border-radius: 12px;
+  background: $primary-color;
+  color: #FFFFFF;
+  font-size: 22px;
+  align-items: center;
+}
+.emma-button-state{
+    border-radius: $border-radius-tertiary-button;
+    background: $primary-color;
+    color: #FFFFFF;
+    font-size: 22px;
+    align-items: center;
+  width: 20%;
+}
