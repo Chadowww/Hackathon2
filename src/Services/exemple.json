@@ -1,0 +1,181 @@
+{
+  "status": 200,
+  "message": "Search results retrieved successfully",
+  "data": {
+    "total_results": 15,
+    "total_results_per_page": 12,
+    "total_pages": 2,
+    "page": 0,
+    "type": "search",
+    "items": [
+      {
+        "product": {
+          "id": "63e96260ff7af4b68a303c6b",
+          "brand": "Apple",
+          "model": "Apple iPhone 14 Plus",
+          "version": "A2632",
+          "category": "Smartphones"
+        },
+        "image": {
+          "front": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/24ebdd53-437d-431c-beaa-01f3db5c29e0_front.jpg",
+          "back": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/01072e00-8e04-4c3b-8242-8d42b1dfaec9_back.jpg"
+        },
+        "versions": "A2885 - A2887 and 3 more..."
+      },
+      {
+        "product": {
+          "id": "63e96260ff7af4b68a3042d6",
+          "brand": "ZTE",
+          "model": "ZTE Axon 30",
+          "version": "A2322",
+          "category": "Smartphones"
+        },
+        "image": {
+          "front": "https://i-techspecs-io.s3.amazonaws.com/ZTE_Axon_30_5G_Standard_EditionA2322_frontback_frontback1.png",
+          "back": "https://i-techspecs-io.s3.amazonaws.com/ZTE_Axon_30_5G_Standard_EditionA2322_frontback_frontback2.png"
+        },
+        "versions": "A2322"
+      },
+      {
+        "product": {
+          "id": "63e96260ff7af4b68a3042d2",
+          "brand": "ZTE",
+          "model": "ZTE Axon 30 Premium Edition",
+          "version": "A2322",
+          "category": "Smartphones"
+        },
+        "image": {
+          "front": "https://i-techspecs-io.s3.amazonaws.com/ZTE_Axon_30_5G_Premium_EditionA2322_frontback_frontback1.png",
+          "back": "https://i-techspecs-io.s3.amazonaws.com/ZTE_Axon_30_5G_Premium_EditionA2322_frontback_frontback2.png"
+        },
+        "versions": "A2322G - A2322"
+      },
+      {
+        "product": {
+          "id": "63e96260ff7af4b68a3042ce",
+          "brand": "ZTE",
+          "model": "ZTE Axon 30 Top Edition",
+          "version": "A2322",
+          "category": "Smartphones"
+        },
+        "image": {
+          "front": "https://i-techspecs-io.s3.amazonaws.com/ZTE_Axon_30_5G_Top_EditionA2322_frontback_frontback1.png",
+          "back": "https://i-techspecs-io.s3.amazonaws.com/ZTE_Axon_30_5G_Top_EditionA2322_frontback_frontback2.png"
+        },
+        "versions": "A2322 - A2322G"
+      },
+      {
+        "product": {
+          "id": "6465f78d44ce559adfeba1b1",
+          "brand": "ZTE",
+          "model": "ZTE Axon 30S 5G",
+          "version": "A2322",
+          "category": "Smartphones"
+        },
+        "image": {
+          "front": null,
+          "back": null
+        },
+        "versions": "A2322"
+      },
+      {
+        "product": {
+          "id": "6465f78d44ce559adfeba1b0",
+          "brand": "ZTE",
+          "model": "ZTE Axon 30S 5G Premium Edition",
+          "version": "A2322",
+          "category": "Smartphones"
+        },
+        "image": {
+          "front": null,
+          "back": null
+        },
+        "versions": "A2322"
+      },
+      {
+        "product": {
+          "id": "63e96260ff7af4b68a3041bb",
+          "brand": "Apple",
+          "model": "Apple iPhone 13",
+          "version": "A2631",
+          "category": "Smartphones"
+        },
+        "image": {
+          "front": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/356072d8-59d8-47e1-aa76-adfd743bdf27_front.jpeg",
+          "back": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/03255764-4b3c-42cf-8618-0ab412d92c23_back.png"
+        },
+        "versions": "A2631 - A2482 and 3 more..."
+      },
+      {
+        "product": {
+          "id": "63e96260ff7af4b68a3041be",
+          "brand": "Apple",
+          "model": "Apple iPhone 13 mini",
+          "version": "A2626",
+          "category": "Smartphones"
+        },
+        "image": {
+          "front": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/65d9f1f5-6957-4f88-b8af-0390fea17c24_front.jpg",
+          "back": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/d1436c40-c67e-4a56-8a19-02d7b7138db9_back.png"
+        },
+        "versions": "A2629 - A2481 and 3 more..."
+      },
+      {
+        "product": {
+          "id": "63e96260ff7af4b68a3041b8",
+          "brand": "Apple",
+          "model": "Apple iPhone 13 Pro",
+          "version": "A2636",
+          "category": "Smartphones"
+        },
+        "image": {
+          "front": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/a46610e6-30e1-471e-b1a3-e39553d930a7_front.png",
+          "back": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/95297348-9928-4f7b-b873-7f1be063ee6a_back.jpg"
+        },
+        "versions": "A2483 - A2638 and 3 more..."
+      },
+      {
+        "product": {
+          "id": "63e961ac53a85104648ec0bc",
+          "brand": "Apple",
+          "model": "Apple iPad 10.2-inch 9th generation (2021)",
+          "version": "A2602",
+          "category": "Tablets"
+        },
+        "image": {
+          "front": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/323ae3c7-fa74-472f-84ac-bc508ada9f1e_front.jpg",
+          "back": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/748a2060-048b-4fc5-80e7-1255fb0cae9e_back.jpg"
+        },
+        "versions": "A2605 - A2604 and 2 more..."
+      },
+      {
+        "product": {
+          "id": "63e961ac53a85104648ec17a",
+          "brand": "Apple",
+          "model": "Apple iPad Air 4th generation (2020)",
+          "version": "A2324",
+          "category": "Tablets"
+        },
+        "image": {
+          "front": "https://i-techspecs-io.s3.amazonaws.com/Apple_iPad_Air_4th_gen_2020_GlobalA2324_front_front1.png",
+          "back": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/1d04fd5c-095c-40f2-b95f-424e41f09c1d_back.png"
+        },
+        "versions": "A2316 - A2325 and 2 more..."
+      },
+      {
+        "product": {
+          "id": "63e961ac53a85104648ec1b6",
+          "brand": "Apple",
+          "model": "Apple iPad Pro 12.9-inch 4th generation (2020)",
+          "version": "A2232",
+          "category": "Tablets"
+        },
+        "image": {
+          "front": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/9450334a-509d-4b7f-b096-7da007484ae6_front.png",
+          "back": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/3814001cv11d-removebg-preview_back.png"
+        },
+        "versions": "A2233 - A2229 and 2 more..."
+      }
+    ]
+  }
+}

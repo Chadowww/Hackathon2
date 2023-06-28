@@ -1,0 +1,935 @@
+{
+  "status": 200,
+  "message": "Product details retrieved successfully",
+  "data": {
+    "type": "detail",
+    "language": "en",
+    "items": [
+      {
+        "product": {
+          "brand": "Apple",
+          "manufacturer": "Foxconn",
+          "model": "Apple iPhone 14 Plus",
+          "version": "A2632",
+          "category": "Smartphones",
+          "region": "Central America, North America (NA)",
+          "country": "Puerto Rico, USA",
+          "alias": "Apple iPhone 14,8",
+          "id": "63e96260ff7af4b68a303c6b"
+        },
+        "key_aspects": {
+          "msrp": "899, 999, 1199 USD",
+          "release_date": "2022-10-07",
+          "color_options": "Midnight, Purple, Starlight, Blue, Red",
+          "camera": "12.2 MP main back camera, 12.2 MP secondary back camera, 12.2 MP front camera",
+          "os": "Apple iOS / iPadOS, Apple iOS 16",
+          "processor": "Apple A15 Bionic APL1007 / APL1W07 (T8110)",
+          "ram": "6 GB",
+          "storage": "128 GB, 256 GB, 512 GB",
+          "wireless_&_cellular": "5G UW, Dual SIM (e-SIM (embedded)), Bluetooth  5.3, and  IEEE 802.11ax (Wi-Fi 6)",
+          "additional_features": "Voice Command, Navigation software, Augmented Reality (AR), Intelligent personal assistant, Voice Recognition, Face Recognition, GPS,  Galileo,  BeiDou,  GLONASS"
+        },
+        "image": {
+          "front": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/24ebdd53-437d-431c-beaa-01f3db5c29e0_front.jpg",
+          "back": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/01072e00-8e04-4c3b-8242-8d42b1dfaec9_back.jpg"
+        },
+        "date": {
+          "released": "2022-10-07",
+          "announced": "2022 Sep 7"
+        },
+        "price": {
+          "msrp": "899, 999, 1199 USD"
+        },
+        "design": {
+          "body": {
+            "height": "160.8 mm, 6.33 inch",
+            "width": "78.1 mm, 3.07 inch",
+            "weight": "203 g, 7.16 ounces",
+            "thickness": "7.8 mm, 0.31 inches",
+            "ip_rating": "IP68",
+            "color": "Midnight, Purple, Starlight, Blue, Red"
+          }
+        },
+        "display": {
+          "type": "Super Retina XDR",
+          "diagonal": "169.7 mm, 6.7 inch",
+          "resolution_(h_x_w)": "1284x2778",
+          "pixel_density": "458 PPI",
+          "refresh_rate": "60 Hz",
+          "width": "71.2 mm, 2.8 inch",
+          "height": "154.04 mm, 6.06 inch",
+          "illumination": "Self-illuminating",
+          "dynamic_range": "10 bit",
+          "pixel_size": "0.05545 mm/pixel",
+          "color_depth": "30 bit",
+          "subpixels": "The data will be added shortly",
+          "number_of_colors": "1073.7M",
+          "screen_to_body_ratio": "87.3%",
+          "bezel_width": "6.9 mm, 0.27 inch(es)",
+          "lcd_mode": "The data will be added shortly",
+          "touchpoints": "10",
+          "glass": "Ceramic shield",
+          "notch": "1",
+          "touch_screen_type": "Capacitive"
+        },
+        "camera": {
+          "back_camera": {
+            "focus": "Phase-Detection Autofocus (PD AF)",
+            "resolution": "12.2 MP",
+            "resolution_(h_x_w)": "4032x3024 pixel",
+            "video_format": "3G2, HEVC",
+            "video_resolution": "3840x2160 pixel, 60 fps",
+            "image_format": "JPG, HEIF",
+            "pixel_size": "1.90 micrometer",
+            "zoom": "2.0 x optical zoom, 5.0 x digital zoom",
+            "flash": "single LED",
+            "aperture_(w)": "f/1.50",
+            "features": "Video Stabilizer (EIS), Optical Image Stabilization (OIS), Video Stabilizer (OIS), HDR photo, HDR video, Red-eye effect reduction, Slow motion video, Burst mode, Touch focus, Macro mode, Panorama Photo, Face detection, Face tagging, Smile detection, Face retouch, Intelligent scene detection",
+            "sensor": "BSI CMOS",
+            "sensor_format": "1/1.70",
+            "equivalent_focal_length": "26 mm"
+          },
+          "back_camera_ii": {
+            "resolution": "12.2 MP",
+            "sensor": "BSI CMOS",
+            "aperture_(w)": "f/2.40",
+            "features": "HDR photo, Slow motion video, Burst mode, Touch focus, Panorama Photo, Face detection, Face tagging, Smile detection, Face retouch, Intelligent scene detection",
+            "sensor_format": "1/3.00",
+            "equivalent_focal_length": "13 mm"
+          },
+          "front_camera": {
+            "focus": "Phase-Detection Autofocus (PD AF)",
+            "resolution": "12.2 MP",
+            "resolution_(h_x_w)": "4032x3024 pixel",
+            "video_resolution": "3840x2160 pixel, 60 fps",
+            "video_format": "3G2, HEVC",
+            "image_format": "JPG, HEIF",
+            "pixel_size": "1.00 micrometer",
+            "aperture_(w)": "f/1.90",
+            "features": "Electronic Image Stabilizer (EIS), Video Stabilizer (EIS), HDR photo, HDR video, Slow motion video, Burst mode, Panorama Photo, Face detection, Smile detection, Face retouch",
+            "sensor": "BSI CMOS",
+            "sensor_format": "1/3.60",
+            "minimum_focal_length": "23 mm"
+          },
+          "front_camera_ii": {
+            "sensor": "Mono CMOS"
+          }
+        },
+        "inside": {
+          "software": {
+            "os": "Apple iOS / iPadOS",
+            "os_version": "Apple iOS 16",
+            "additional_features": "Voice Command, Navigation software, Augmented Reality (AR), Intelligent personal assistant, Voice Recognition, Face Recognition"
+          },
+          "processor": {
+            "cpu": "Apple A15 Bionic APL1007 / APL1W07 (T8110)",
+            "cpu_clock_speed": "3233 MHz",
+            "gpu": "Apple A15MP5"
+          },
+          "ram": {
+            "type": "LPDDR4x SDRAM",
+            "capacity": "6 GB",
+            "clock_speed": "2133 MHz"
+          },
+          "storage": {
+            "type": "Flash EEPROM",
+            "capacity": "128 GB, 256 GB, 512 GB"
+          },
+          "audio": {
+            "channel": "stereo",
+            "output": "Proprietary",
+            "hearing_aid_compatibility": "M3, T4",
+            "microphone_input": "Proprietary",
+            "microphone": "3",
+            "av_out": " Proprietary",
+            "av_resolution": "3840x2160 (2160p) 4K UHD"
+          },
+          "cellular": {
+            "sim_slot": "e-SIM (embedded)",
+            "sim_frequencies": "GSM 850MHz (B5), GSM 900MHz (B8), GSM 1800MHz (B3), GSM 1900MHz (PCS, B2), UMTS 2100MHz (Band I, IMT), UMTS 1900MHz (Band II, PCS), UMTS 1700/2100MHz (Band IV, AWS), UMTS 850MHz (Band V, CLR), UMTS 900MHz (Band VIII), LTE 2100 MHz (Band 1), LTE 1900 MHz (Band 2, PCS), LTE 1800 MHz (Band 3), LTE 1700/2100 MHz (Band 4, AWS), LTE 850 MHz (Band 5), LTE 2600 MHz (Band 7), LTE 900 MHz (Band 8), LTE 700 MHz (Band 12), LTE 700 MHz (Band 13), LTE 700 MHz (Band XIV), LTE 700 MHz (Band 17), LTE 800 MHz (Band 18), LTE 800 MHz (Band 19), LTE 800 MHz (Band 20), LTE 1900 MHz (Band 25), LTE 850 MHz (Band 26), LTE 700 MHz (Band 28), LTE 700 MHz (Band 29), LTE 2300 MHz (Band 30), LTE 1500 MHz (Band 32), TD-LTE 2000 MHz (Band XXXIV), TD-LTE 2600 MHz (Band 38), TD-LTE 1900 MHz (Band 39), TD-LTE 2300 MHz (Band XL), TD-LTE 2500 MHz (Band XLI), TD-LTE 3500 MHz (Band XLII), TD-LTE 5900 MHz (Band XLVI), TD-LTE 3600 MHz (Band 48), TD-LTE 2400 MHz (Band LIII), LTE 1700/2100 MHz (Band 66), LTE 600 MHz (Band 71), NR 2100 MHz (N1), NR 1900 MHz (N2, PCS), NR 1800 MHz (N3), NR 850 MHz (N5), NR 2600 MHz (N7), NR 900 MHz (N8), NR 700 MHz (N12), NR 700 MHz (N14), NR 800 MHz (N20), NR 850 MHz (N26), NR 1900 MHz (N25), NR 700 MHz (N28), NR 700 MHz (N29), NR 2300 MHz (N30), TD-NR 2600 MHz (N38), TD-NR 2300 MHz (N40), TD-NR 2500 MHz (N41), TD-NR 3600 MHz (N48), NR 2400 MHz (N53), NR 1700/2100 MHz (N66), NR 1700/2000 MHz (N70), NR 600 MHz (N71), TD-NR 3700 MHz (N77), TD-NR 3500 MHz (N78), TD-NR 4700 MHz (N79), TD-NR 26 GHz (N258), TD-NR 39 GHz (N260), TD-NR 28 GHz (N261) bands",
+            "sim_mobile_data": "GPRS (Class unspecified), EDGE (Class unspecified), UMTS 384 kbps (W-CDMA), HSUPA (Cat. unspecified), HSUPA 5.76 Mbps (Cat. 6), HSDPA (Cat. unspecified), HSPA+ 21.1 Mbps (Cat. 18), DC-HSDPA 42.2 Mbps (Cat. 24), LTE (Cat. unspecified), LTE 100 Mbps / 50 Mbps (Cat. 3), LTE 150 Mbps / 50 Mbps (Cat. 4), LTE 300 Mbps / 50 Mbps (Cat. 6), LTE 300 Mbps / 75 Mbps (Cat. 5), LTE 400 Mbps / 150 Mbps (LTE Cat. 13), LTE 450 Mbps / 50 Mbps (LTE Cat. 9), LTE 450 Mbps / 100 Mbps (LTE Cat. 10), LTE 600 Mbps / 50 Mbps (LTE Cat. 11), LTE 600 Mbps / 100 Mbps (LTE Cat. 12), LTE 1 Gbps / 100 Mbps (LTE Cat. 16), LTE 1.6 Gbps (LTE Cat. 19), NR 1.5 Gbps, NR 2.6 Gbps, NR 3.7 Gbps, NR 4.6 Gbps data links",
+            "sim_ii_slot": "e-SIM (embedded)",
+            "sim_ii_frequencies": "GSM 850MHz (B5), GSM 900MHz (B8), GSM 1800MHz (B3), GSM 1900MHz (PCS, B2), UMTS 2100MHz (Band I, IMT), UMTS 1900MHz (Band II, PCS), UMTS 1700/2100MHz (Band IV, AWS), UMTS 850MHz (Band V, CLR), UMTS 900MHz (Band VIII), LTE 2100 MHz (Band 1), LTE 1900 MHz (Band 2, PCS), LTE 1800 MHz (Band 3), LTE 1700/2100 MHz (Band 4, AWS), LTE 850 MHz (Band 5), LTE 2600 MHz (Band 7), LTE 900 MHz (Band 8), LTE 700 MHz (Band 12), LTE 700 MHz (Band 13), LTE 700 MHz (Band XIV), LTE 700 MHz (Band 17), LTE 800 MHz (Band 18), LTE 800 MHz (Band 19), LTE 800 MHz (Band 20), LTE 1900 MHz (Band 25), LTE 850 MHz (Band 26), LTE 700 MHz (Band 28), LTE 700 MHz (Band 29), LTE 2300 MHz (Band 30), LTE 1500 MHz (Band 32), TD-LTE 2000 MHz (Band XXXIV), TD-LTE 2600 MHz (Band 38), TD-LTE 1900 MHz (Band 39), TD-LTE 2300 MHz (Band XL), TD-LTE 2500 MHz (Band XLI), TD-LTE 3500 MHz (Band XLII), TD-LTE 5900 MHz (Band XLVI), TD-LTE 3600 MHz (Band 48), TD-LTE 2400 MHz (Band LIII), LTE 1700/2100 MHz (Band 66), LTE 600 MHz (Band 71), NR 2100 MHz (N1), NR 1900 MHz (N2, PCS), NR 1800 MHz (N3), NR 850 MHz (N5), NR 2600 MHz (N7), NR 900 MHz (N8), NR 700 MHz (N12), NR 700 MHz (N14), NR 800 MHz (N20), NR 850 MHz (N26), NR 1900 MHz (N25), NR 700 MHz (N28), NR 700 MHz (N29), NR 2300 MHz (N30), TD-NR 2600 MHz (N38), TD-NR 2300 MHz (N40), TD-NR 2500 MHz (N41), TD-NR 3600 MHz (N48), NR 2400 MHz (N53), NR 1700/2100 MHz (N66), NR 1700/2000 MHz (N70), NR 600 MHz (N71), TD-NR 3700 MHz (N77), TD-NR 3500 MHz (N78), TD-NR 4700 MHz (N79), TD-NR 26 GHz (N258), TD-NR 39 GHz (N260), TD-NR 28 GHz (N261)",
+            "sim_ii_mobile_data": "GPRS (Class unspecified), EDGE (Class unspecified), UMTS 384 kbps (W-CDMA), HSUPA (Cat. unspecified), HSUPA 5.76 Mbps (Cat. 6), HSDPA (Cat. unspecified), HSPA+ 21.1 Mbps (Cat. 18), DC-HSDPA 42.2 Mbps (Cat. 24), LTE 100 Mbps / 50 Mbps (Cat. 3), LTE 150 Mbps / 50 Mbps (Cat. 4), LTE 300 Mbps / 50 Mbps (Cat. 6), LTE 300 Mbps / 75 Mbps (Cat. 5), LTE 300 Mbps / 100 Mbps (Cat. 7), LTE 400 Mbps / 150 Mbps (LTE Cat. 13), LTE 450 Mbps / 50 Mbps (LTE Cat. 9), LTE 450 Mbps / 100 Mbps (LTE Cat. 10), LTE 600 Mbps / 50 Mbps (LTE Cat. 11), LTE 600 Mbps / 100 Mbps (LTE Cat. 12), LTE 1 Gbps / 100 Mbps (LTE Cat. 16), LTE 1.6 Gbps (LTE Cat. 19), NR 1.5 Gbps, NR 2.6 Gbps, NR 3.7 Gbps, NR 4.6 Gbps",
+            "sim_ii_module": "Qualcomm Snapdragon X65M",
+            "dual_sim_type": "Dual standby",
+            "carrier": "AT&T Mobility Boost Mobile US Cellular South / C Spire Cricket Communications MetroPCS Communications Sprint Nextel Corporation T-Mobile USA United States Cellular Corporation Verizon Wireless",
+            "generation": "5G UW",
+            "sim_type": "Dual"
+          },
+          "wireless": {
+            "bluetooth_version": " 5.3",
+            "bluetooth_profiles": "A2DP, A2DP with aptX codec, A2DP with aptX HD codec, AVRCP, HFP, HID, MAP, PAN, PBA",
+            "wifi": "IEEE 802.11a, IEEE 802.11b, IEEE 802.11g, IEEE 802.11n, IEEE 802.11ac, IEEE 802.11ax (Wi-Fi 6)",
+            "wifi_features": "Wi-Fi Calling (UMA), Wi-Fi Calling (VoWiFi)",
+            "experiences": "FM Radio,  NFC"
+          },
+          "battery": {
+            "type": "Lithium-ion — 1 cell",
+            "cell_i": "4325 mAh",
+            "capacity": "4325 mAh",
+            "voltage": "3.86 Volts",
+            "energy": "16.69 Wh",
+            "wireless_charging": "Qi wireless charging, MagSafe",
+            "charging_power": "20.0 W",
+            "wireless_charging_power": "15.0 W",
+            "style": "Non Removable"
+          },
+          "location": {
+            "additional_features": "GPS,  Galileo,  BeiDou,  GLONASS"
+          },
+          "sar": {
+            "head_(usa)": "1.140 W/kg",
+            "head_(eu)": "0.990 W/kg",
+            "body_(usa)": "1.150 W/kg",
+            "body_(eu)": "0.980 W/kg"
+          }
+        },
+        "No": {
+          "Expansion": "Expandable Storage",
+          "FM_Radio": "FM Radio"
+        }
+      },
+      {
+        "product": {
+          "brand": "Apple",
+          "manufacturer": "Foxconn",
+          "model": "Apple iPhone 14 Plus",
+          "version": "A2886",
+          "category": "Smartphones",
+          "region": "Africa, Asia, Australia, Central America, Eastern Europe, Europe, Middle East, North America (NA), Oceania, South America (SA), Southeast Asia, Western Europe, Worldwide",
+          "country": "Algeria, Argentina, Australia, Austria, Bangladesh, Belgium, Bolivia, Brazil, Bulgaria, Cambodia, Chile, Colombia, Costa Rica, Croatia, Czech Republic, Denmark, Ecuador, Estonia, Egypt, Finland, France, Greece, Germany, HK, Honduras, Hungary, India, Indonesia, Ireland, Israel, Italy, Jordan, Kenya, Kuwait, Latvia, Lithuania, Lebanon, Malaysia, Mali, Mongolia, Morocco, Myanmar, Nepal, Netherlands, Nigeria, Norway, NZ, Panama, Pakistan, Paraguay, Peru, Philippines, Poland, Portugal, Romania, Serbia, Singapore, Slovakia, Slovenia, South Africa, South Korea, Spain, Sri Lanka, Switzerland, Sweden, Taiwan, Tanzania, Tunisie, Thailand, Turkey, Emirates (UAE), UK, Ukraine, Uzbekistan, Vietnam",
+          "alias": "Apple iPhone 14,8",
+          "id": "63e96260ff7af4b68a303c68"
+        },
+        "key_aspects": {
+          "msrp": "1147, 1280, 1547 USD",
+          "release_date": "2022-10-07",
+          "color_options": "Midnight, Purple, Starlight, Blue, Red",
+          "camera": "12.2 MP main back camera, 12.2 MP secondary back camera, 12.2 MP front camera",
+          "os": "Apple iOS / iPadOS, Apple iOS 16",
+          "processor": "Apple A15 Bionic APL1007 / APL1W07 (T8110)",
+          "ram": "6 GB",
+          "storage": "128 GB, 256 GB, 512 GB",
+          "wireless_&_cellular": "5G, Dual SIM (e-SIM (embedded)), Bluetooth  5.3, and  IEEE 802.11ax (Wi-Fi 6)",
+          "additional_features": "Voice Command, Navigation software, Augmented Reality (AR), Intelligent personal assistant, Voice Recognition, Face Recognition, GPS,  Galileo,  BeiDou,  GLONASS"
+        },
+        "image": {
+          "front": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/4-apple-iphone-14_front.jpg",
+          "back": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/6ff19fa9-54d7-4d32-983d-f1d0f0d52149_back.jpg"
+        },
+        "date": {
+          "released": "2022-10-07",
+          "announced": "2022 Sep 7"
+        },
+        "price": {
+          "msrp": "1147, 1280, 1547 USD"
+        },
+        "design": {
+          "body": {
+            "height": "160.8 mm, 6.33 inch",
+            "width": "78.1 mm, 3.07 inch",
+            "weight": "203 g, 7.16 ounces",
+            "thickness": "7.8 mm, 0.31 inches",
+            "ip_rating": "IP68",
+            "color": "Midnight, Purple, Starlight, Blue, Red"
+          }
+        },
+        "display": {
+          "type": "Super Retina XDR",
+          "diagonal": "169.7 mm, 6.7 inch",
+          "resolution_(h_x_w)": "1284x2778",
+          "pixel_density": "458 PPI",
+          "refresh_rate": "60 Hz",
+          "width": "71.2 mm, 2.8 inch",
+          "height": "154.04 mm, 6.06 inch",
+          "illumination": "Self-illuminating",
+          "dynamic_range": "10 bit",
+          "pixel_size": "0.05545 mm/pixel",
+          "color_depth": "30 bit",
+          "subpixels": "The data will be added shortly",
+          "number_of_colors": "1073.7M",
+          "screen_to_body_ratio": "87.3%",
+          "bezel_width": "6.9 mm, 0.27 inch(es)",
+          "lcd_mode": "The data will be added shortly",
+          "touchpoints": "10",
+          "glass": "Ceramic shield",
+          "notch": "1",
+          "touch_screen_type": "Capacitive"
+        },
+        "camera": {
+          "back_camera": {
+            "focus": "Phase-Detection Autofocus (PD AF)",
+            "resolution": "12.2 MP",
+            "resolution_(h_x_w)": "4032x3024 pixel",
+            "video_format": "3G2, HEVC",
+            "video_resolution": "3840x2160 pixel, 60 fps",
+            "image_format": "JPG, HEIF",
+            "pixel_size": "1.90 micrometer",
+            "zoom": "2.0 x optical zoom, 5.0 x digital zoom",
+            "flash": "single LED",
+            "aperture_(w)": "f/1.50",
+            "features": "Video Stabilizer (EIS), Optical Image Stabilization (OIS), Video Stabilizer (OIS), HDR photo, HDR video, Red-eye effect reduction, Slow motion video, Burst mode, Touch focus, Macro mode, Panorama Photo, Face detection, Face tagging, Smile detection, Face retouch, Intelligent scene detection",
+            "sensor": "BSI CMOS",
+            "sensor_format": "1/1.70",
+            "equivalent_focal_length": "26 mm"
+          },
+          "back_camera_ii": {
+            "resolution": "12.2 MP",
+            "sensor": "BSI CMOS",
+            "aperture_(w)": "f/2.40",
+            "features": "HDR photo, Slow motion video, Burst mode, Touch focus, Panorama Photo, Face detection, Face tagging, Smile detection, Face retouch, Intelligent scene detection",
+            "sensor_format": "1/3.00",
+            "equivalent_focal_length": "13 mm"
+          },
+          "front_camera": {
+            "focus": "Phase-Detection Autofocus (PD AF)",
+            "resolution": "12.2 MP",
+            "resolution_(h_x_w)": "4032x3024 pixel",
+            "video_resolution": "3840x2160 pixel, 60 fps",
+            "video_format": "3G2, HEVC",
+            "image_format": "JPG, HEIF",
+            "pixel_size": "1.00 micrometer",
+            "aperture_(w)": "f/1.90",
+            "features": "Electronic Image Stabilizer (EIS), Video Stabilizer (EIS), HDR photo, HDR video, Slow motion video, Burst mode, Panorama Photo, Face detection, Smile detection, Face retouch",
+            "sensor": "BSI CMOS",
+            "sensor_format": "1/3.60",
+            "minimum_focal_length": "23 mm"
+          },
+          "front_camera_ii": {
+            "sensor": "Mono CMOS"
+          }
+        },
+        "inside": {
+          "software": {
+            "os": "Apple iOS / iPadOS",
+            "os_version": "Apple iOS 16",
+            "additional_features": "Voice Command, Navigation software, Augmented Reality (AR), Intelligent personal assistant, Voice Recognition, Face Recognition"
+          },
+          "processor": {
+            "cpu": "Apple A15 Bionic APL1007 / APL1W07 (T8110)",
+            "cpu_clock_speed": "3233 MHz",
+            "gpu": "Apple A15MP5"
+          },
+          "ram": {
+            "type": "LPDDR4x SDRAM",
+            "capacity": "6 GB",
+            "clock_speed": "2133 MHz"
+          },
+          "storage": {
+            "type": "Flash EEPROM",
+            "capacity": "128 GB, 256 GB, 512 GB"
+          },
+          "audio": {
+            "channel": "stereo",
+            "output": "Proprietary",
+            "hearing_aid_compatibility": "M3, T4",
+            "microphone_input": "Proprietary",
+            "microphone": "3",
+            "av_out": " Proprietary",
+            "av_resolution": "3840x2160 (2160p) 4K UHD"
+          },
+          "cellular": {
+            "sim_slot": "e-SIM (embedded)",
+            "sim_frequencies": "GSM 850MHz (B5), GSM 900MHz (B8), GSM 1800MHz (B3), GSM 1900MHz (PCS, B2), UMTS 2100MHz (Band I, IMT), UMTS 1900MHz (Band II, PCS), UMTS 1700/2100MHz (Band IV, AWS), UMTS 850MHz (Band V, CLR), UMTS 900MHz (Band VIII), LTE 2100 MHz (Band 1), LTE 1900 MHz (Band 2, PCS), LTE 1800 MHz (Band 3), LTE 1700/2100 MHz (Band 4, AWS), LTE 850 MHz (Band 5), LTE 2600 MHz (Band 7), LTE 900 MHz (Band 8), LTE 700 MHz (Band 12), LTE 700 MHz (Band 13), LTE 700 MHz (Band 17), LTE 800 MHz (Band 18), LTE 800 MHz (Band 19), LTE 800 MHz (Band 20), LTE 1900 MHz (Band 25), LTE 850 MHz (Band 26), LTE 700 MHz (Band 28), LTE 2300 MHz (Band 30), LTE 1500 MHz (Band 32), TD-LTE 2000 MHz (Band XXXIV), TD-LTE 2600 MHz (Band 38), TD-LTE 1900 MHz (Band 39), TD-LTE 2300 MHz (Band XL), TD-LTE 2500 MHz (Band XLI), TD-LTE 3500 MHz (Band XLII), TD-LTE 5900 MHz (Band XLVI), TD-LTE 3600 MHz (Band 48), TD-LTE 2400 MHz (Band LIII), LTE 1700/2100 MHz (Band 66), NR 2100 MHz (N1), NR 1900 MHz (N2, PCS), NR 1800 MHz (N3), NR 850 MHz (N5), NR 2600 MHz (N7), NR 900 MHz (N8), NR 700 MHz (N12), NR 800 MHz (N20), NR 850 MHz (N26), NR 1900 MHz (N25), NR 700 MHz (N28), NR 2300 MHz (N30), TD-NR 2600 MHz (N38), TD-NR 2300 MHz (N40), TD-NR 2500 MHz (N41), TD-NR 3600 MHz (N48), NR 2400 MHz (N53), NR 1700/2100 MHz (N66), NR 1700/2000 MHz (N70), TD-NR 3700 MHz (N77), TD-NR 3500 MHz (N78), TD-NR 4700 MHz (N79) bands",
+            "sim_mobile_data": "GPRS (Class unspecified), EDGE (Class unspecified), UMTS 384 kbps (W-CDMA), HSUPA (Cat. unspecified), HSUPA 5.76 Mbps (Cat. 6), HSDPA (Cat. unspecified), HSPA+ 21.1 Mbps (Cat. 18), DC-HSDPA 42.2 Mbps (Cat. 24), LTE (Cat. unspecified), LTE 100 Mbps / 50 Mbps (Cat. 3), LTE 150 Mbps / 50 Mbps (Cat. 4), LTE 300 Mbps / 50 Mbps (Cat. 6), LTE 300 Mbps / 75 Mbps (Cat. 5), LTE 400 Mbps / 150 Mbps (LTE Cat. 13), LTE 450 Mbps / 50 Mbps (LTE Cat. 9), LTE 450 Mbps / 100 Mbps (LTE Cat. 10), LTE 600 Mbps / 50 Mbps (LTE Cat. 11), LTE 600 Mbps / 100 Mbps (LTE Cat. 12), LTE 1 Gbps / 100 Mbps (LTE Cat. 16), LTE 1.6 Gbps (LTE Cat. 19), NR 1.5 Gbps, NR 2.6 Gbps, NR 3.7 Gbps data links",
+            "sim_ii_slot": "e-SIM (embedded)",
+            "sim_ii_frequencies": "GSM 850MHz (B5), GSM 900MHz (B8), GSM 1800MHz (B3), GSM 1900MHz (PCS, B2), UMTS 2100MHz (Band I, IMT), UMTS 1900MHz (Band II, PCS), UMTS 1700/2100MHz (Band IV, AWS), UMTS 850MHz (Band V, CLR), UMTS 900MHz (Band VIII), LTE 2100 MHz (Band 1), LTE 1900 MHz (Band 2, PCS), LTE 1800 MHz (Band 3), LTE 1700/2100 MHz (Band 4, AWS), LTE 850 MHz (Band 5), LTE 2600 MHz (Band 7), LTE 900 MHz (Band 8), LTE 700 MHz (Band 12), LTE 700 MHz (Band 13), LTE 700 MHz (Band 17), LTE 800 MHz (Band 18), LTE 800 MHz (Band 19), LTE 800 MHz (Band 20), LTE 1900 MHz (Band 25), LTE 850 MHz (Band 26), LTE 700 MHz (Band 28), LTE 2300 MHz (Band 30), LTE 1500 MHz (Band 32), TD-LTE 2000 MHz (Band XXXIV), TD-LTE 2600 MHz (Band 38), TD-LTE 1900 MHz (Band 39), TD-LTE 2300 MHz (Band XL), TD-LTE 2500 MHz (Band XLI), TD-LTE 3500 MHz (Band XLII), TD-LTE 5900 MHz (Band XLVI), TD-LTE 3600 MHz (Band 48), TD-LTE 2400 MHz (Band LIII), LTE 1700/2100 MHz (Band 66), NR 2100 MHz (N1), NR 1900 MHz (N2, PCS), NR 1800 MHz (N3), NR 850 MHz (N5), NR 2600 MHz (N7), NR 900 MHz (N8), NR 700 MHz (N12), NR 800 MHz (N20), NR 850 MHz (N26), NR 1900 MHz (N25), NR 700 MHz (N28), NR 2300 MHz (N30), TD-NR 2600 MHz (N38), TD-NR 2300 MHz (N40), TD-NR 2500 MHz (N41), TD-NR 3600 MHz (N48), NR 2400 MHz (N53), NR 1700/2100 MHz (N66), NR 1700/2000 MHz (N70), TD-NR 3700 MHz (N77), TD-NR 3500 MHz (N78), TD-NR 4700 MHz (N79)",
+            "sim_ii_mobile_data": "GPRS (Class unspecified), EDGE (Class unspecified), UMTS 384 kbps (W-CDMA), HSUPA (Cat. unspecified), HSUPA 5.76 Mbps (Cat. 6), HSDPA (Cat. unspecified), HSPA+ 21.1 Mbps (Cat. 18), DC-HSDPA 42.2 Mbps (Cat. 24), LTE 100 Mbps / 50 Mbps (Cat. 3), LTE 150 Mbps / 50 Mbps (Cat. 4), LTE 300 Mbps / 50 Mbps (Cat. 6), LTE 300 Mbps / 75 Mbps (Cat. 5), LTE 300 Mbps / 100 Mbps (Cat. 7), LTE 400 Mbps / 150 Mbps (LTE Cat. 13), LTE 450 Mbps / 50 Mbps (LTE Cat. 9), LTE 450 Mbps / 100 Mbps (LTE Cat. 10), LTE 600 Mbps / 50 Mbps (LTE Cat. 11), LTE 600 Mbps / 100 Mbps (LTE Cat. 12), LTE 1 Gbps / 100 Mbps (LTE Cat. 16), LTE 1.6 Gbps (LTE Cat. 19), NR 1.5 Gbps, NR 2.6 Gbps, NR 3.7 Gbps",
+            "sim_ii_module": "Qualcomm Snapdragon X65M",
+            "dual_sim_type": "Dual standby",
+            "carrier": "A1 Belarus / velcom A1 Bulgaria A1 Slovenija A1 Telekom Austria A1 Vipnet Asia Pacific Telecom Base Belgium Bharti Airtel Limited India Bouygues Telecom Cellcom Israel Chunghwa Telecom DNA Oyj EE Limited UK Etisalat UAE FarEasTone Telecommunications Free Mobile FR Hutchison Drei Austria Hutchison Three UK Kcell JSC KPN Mobile Movistar Spain O2 Czech Republic O2 Germany O2 United Kingdom Orange Belgium Orange Egypt / Mobinil Orange France Orange Polska Orange Romania Orange Slovakia Orange Spain Orange United Kingdom Polkomtel Plus Proximus Belgacom Mobile Reliance Communications S Mobility Limited Salt Mobile SA / Orange CH SFR SingTel Optus Pty Limited Sunrise Communications AG Swisscom AG T-Mobile Austria T-Mobile Czech Republic T-Mobile Nederland T-Mobile Polska T-Mobile United Kingdom Taiwan Mobile Taiwan Star Telecom Corporation Limited Telecom Italia Telekom Croatia Telekom Deutschland Telekom Hungary Telekom Romania Telekom Slovakia Telekom Slovenije Telenor Bulgaria Telenor Hungary / Yettel Telenor Norway Telia Finland Telia Norway Telstra Corporation Limited Virgin Mobile United Kingdom Vivacom Bulgaria Vodafone Australia Vodafone Czech Republic Vodafone Germany Vodafone Hungary Vodafone India Vodafone Italia Vodafone Netherlands Vodafone Romania Vodafone Spain Vodafone Turkey Vodafone United Kingdom WIND Hellas Wind Tre Italia",
+            "generation": "5G",
+            "sim_type": "Dual"
+          },
+          "wireless": {
+            "bluetooth_version": " 5.3",
+            "bluetooth_profiles": "A2DP, A2DP with aptX codec, A2DP with aptX HD codec, AVRCP, HFP, HID, MAP, PAN, PBA",
+            "wifi": "IEEE 802.11a, IEEE 802.11b, IEEE 802.11g, IEEE 802.11n, IEEE 802.11ac, IEEE 802.11ax (Wi-Fi 6)",
+            "wifi_features": "Wi-Fi Calling (UMA), Wi-Fi Calling (VoWiFi)",
+            "experiences": "FM Radio,  NFC"
+          },
+          "battery": {
+            "type": "Lithium-ion — 1 cell",
+            "cell_i": "4325 mAh",
+            "capacity": "4325 mAh",
+            "voltage": "3.86 Volts",
+            "energy": "16.69 Wh",
+            "wireless_charging": "Qi wireless charging, MagSafe",
+            "charging_power": "20.0 W",
+            "wireless_charging_power": "15.0 W",
+            "style": "Non Removable"
+          },
+          "location": {
+            "additional_features": "GPS,  Galileo,  BeiDou,  GLONASS"
+          },
+          "sar": {
+            "head_(usa)": "1.140 W/kg",
+            "head_(eu)": "0.990 W/kg",
+            "body_(usa)": "1.150 W/kg",
+            "body_(eu)": "0.980 W/kg"
+          }
+        },
+        "No": {
+          "Expansion": "Expandable Storage",
+          "FM_Radio": "FM Radio"
+        }
+      },
+      {
+        "product": {
+          "brand": "Apple",
+          "manufacturer": "Foxconn",
+          "model": "Apple iPhone 14 Plus",
+          "version": "A2888",
+          "category": "Smartphones",
+          "region": "Asia",
+          "country": "China, HK",
+          "alias": "Apple iPhone 14,8",
+          "id": "63e96260ff7af4b68a303c72"
+        },
+        "key_aspects": {
+          "msrp": "976, 1101, 1352 USD",
+          "release_date": "2022-10-01",
+          "color_options": "Midnight, Purple, Starlight, Blue, Red",
+          "camera": "12.2 MP main back camera, 12.2 MP secondary back camera, 12.2 MP front camera",
+          "os": "Apple iOS / iPadOS, Apple iOS 16",
+          "processor": "Apple A15 Bionic APL1007 / APL1W07 (T8110)",
+          "ram": "6 GB",
+          "storage": "128 GB, 256 GB, 512 GB",
+          "wireless_&_cellular": "5G, Dual SIM (Nano-SIM (4FF)), Bluetooth  5.3, and  IEEE 802.11ax (Wi-Fi 6)",
+          "additional_features": "Voice Command, Navigation software, Augmented Reality (AR), Intelligent personal assistant, Voice Recognition, Face Recognition, GPS,  Galileo,  BeiDou,  GLONASS"
+        },
+        "image": {
+          "front": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/d5877779-3b10-4f7e-93a7-004861788a2e_front.jpg",
+          "back": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/a7543f8a-bf46-408c-819a-72c4ffe483b3_back.jpg"
+        },
+        "date": {
+          "released": "2022-10-01",
+          "announced": "2022 Sep 7"
+        },
+        "price": {
+          "msrp": "976, 1101, 1352 USD"
+        },
+        "design": {
+          "body": {
+            "height": "160.8 mm, 6.33 inch",
+            "width": "78.1 mm, 3.07 inch",
+            "weight": "203 g, 7.16 ounces",
+            "thickness": "7.8 mm, 0.31 inches",
+            "ip_rating": "IP68",
+            "color": "Midnight, Purple, Starlight, Blue, Red"
+          }
+        },
+        "display": {
+          "type": "Super Retina XDR",
+          "diagonal": "169.7 mm, 6.7 inch",
+          "resolution_(h_x_w)": "1284x2778",
+          "pixel_density": "458 PPI",
+          "refresh_rate": "60 Hz",
+          "width": "71.2 mm, 2.8 inch",
+          "height": "154.04 mm, 6.06 inch",
+          "illumination": "Self-illuminating",
+          "dynamic_range": "10 bit",
+          "pixel_size": "0.05545 mm/pixel",
+          "color_depth": "30 bit",
+          "subpixels": "The data will be added shortly",
+          "number_of_colors": "1073.7M",
+          "screen_to_body_ratio": "87.3%",
+          "bezel_width": "6.9 mm, 0.27 inch(es)",
+          "lcd_mode": "The data will be added shortly",
+          "touchpoints": "10",
+          "glass": "Ceramic shield",
+          "notch": "1",
+          "touch_screen_type": "Capacitive"
+        },
+        "camera": {
+          "back_camera": {
+            "focus": "Phase-Detection Autofocus (PD AF)",
+            "resolution": "12.2 MP",
+            "resolution_(h_x_w)": "4032x3024 pixel",
+            "video_format": "3G2, HEVC",
+            "video_resolution": "3840x2160 pixel, 60 fps",
+            "image_format": "JPG, HEIF",
+            "pixel_size": "1.90 micrometer",
+            "zoom": "2.0 x optical zoom, 5.0 x digital zoom",
+            "flash": "single LED",
+            "aperture_(w)": "f/1.50",
+            "features": "Video Stabilizer (EIS), Optical Image Stabilization (OIS), Video Stabilizer (OIS), HDR photo, HDR video, Red-eye effect reduction, Slow motion video, Burst mode, Touch focus, Macro mode, Panorama Photo, Face detection, Face tagging, Smile detection, Face retouch, Intelligent scene detection",
+            "sensor": "BSI CMOS",
+            "sensor_format": "1/1.70",
+            "equivalent_focal_length": "26 mm"
+          },
+          "back_camera_ii": {
+            "resolution": "12.2 MP",
+            "sensor": "BSI CMOS",
+            "aperture_(w)": "f/2.40",
+            "features": "HDR photo, Slow motion video, Burst mode, Touch focus, Panorama Photo, Face detection, Face tagging, Smile detection, Face retouch, Intelligent scene detection",
+            "sensor_format": "1/3.00",
+            "equivalent_focal_length": "13 mm"
+          },
+          "front_camera": {
+            "focus": "Phase-Detection Autofocus (PD AF)",
+            "resolution": "12.2 MP",
+            "resolution_(h_x_w)": "4032x3024 pixel",
+            "video_resolution": "3840x2160 pixel, 60 fps",
+            "video_format": "3G2, HEVC",
+            "image_format": "JPG, HEIF",
+            "pixel_size": "1.00 micrometer",
+            "aperture_(w)": "f/1.90",
+            "features": "Electronic Image Stabilizer (EIS), Video Stabilizer (EIS), HDR photo, HDR video, Slow motion video, Burst mode, Panorama Photo, Face detection, Smile detection, Face retouch",
+            "sensor": "BSI CMOS",
+            "sensor_format": "1/3.60",
+            "minimum_focal_length": "23 mm"
+          },
+          "front_camera_ii": {
+            "sensor": "Mono CMOS"
+          }
+        },
+        "inside": {
+          "software": {
+            "os": "Apple iOS / iPadOS",
+            "os_version": "Apple iOS 16",
+            "additional_features": "Voice Command, Navigation software, Augmented Reality (AR), Intelligent personal assistant, Voice Recognition, Face Recognition"
+          },
+          "processor": {
+            "cpu": "Apple A15 Bionic APL1007 / APL1W07 (T8110)",
+            "cpu_clock_speed": "3233 MHz",
+            "gpu": "Apple A15MP5"
+          },
+          "ram": {
+            "type": "LPDDR4x SDRAM",
+            "capacity": "6 GB",
+            "clock_speed": "2133 MHz"
+          },
+          "storage": {
+            "type": "Flash EEPROM",
+            "capacity": "128 GB, 256 GB, 512 GB"
+          },
+          "audio": {
+            "channel": "stereo",
+            "output": "Proprietary",
+            "hearing_aid_compatibility": "M3, T4",
+            "microphone_input": "Proprietary",
+            "microphone": "3",
+            "av_out": " Proprietary",
+            "av_resolution": "3840x2160 (2160p) 4K UHD"
+          },
+          "cellular": {
+            "sim_slot": "Nano-SIM (4FF)",
+            "sim_frequencies": "GSM 850MHz (B5), GSM 900MHz (B8), GSM 1800MHz (B3), GSM 1900MHz (PCS, B2), UMTS 2100MHz (Band I, IMT), UMTS 1900MHz (Band II, PCS), UMTS 1700/2100MHz (Band IV, AWS), UMTS 850MHz (Band V, CLR), UMTS 900MHz (Band VIII), LTE 2100 MHz (Band 1), LTE 1900 MHz (Band 2, PCS), LTE 1800 MHz (Band 3), LTE 1700/2100 MHz (Band 4, AWS), LTE 850 MHz (Band 5), LTE 2600 MHz (Band 7), LTE 900 MHz (Band 8), LTE 700 MHz (Band 12), LTE 700 MHz (Band 13), LTE 700 MHz (Band 17), LTE 800 MHz (Band 18), LTE 800 MHz (Band 19), LTE 800 MHz (Band 20), LTE 1900 MHz (Band 25), LTE 850 MHz (Band 26), LTE 700 MHz (Band 28), LTE 2300 MHz (Band 30), LTE 1500 MHz (Band 32), TD-LTE 2000 MHz (Band XXXIV), TD-LTE 2600 MHz (Band 38), TD-LTE 1900 MHz (Band 39), TD-LTE 2300 MHz (Band XL), TD-LTE 2500 MHz (Band XLI), TD-LTE 3500 MHz (Band XLII), TD-LTE 5900 MHz (Band XLVI), TD-LTE 3600 MHz (Band 48), LTE 1700/2100 MHz (Band 66), NR 2100 MHz (N1), NR 1900 MHz (N2, PCS), NR 1800 MHz (N3), NR 850 MHz (N5), NR 2600 MHz (N7), NR 900 MHz (N8), NR 700 MHz (N12), NR 800 MHz (N20), NR 850 MHz (N26), NR 1900 MHz (N25), NR 700 MHz (N28), NR 2300 MHz (N30), TD-NR 2600 MHz (N38), TD-NR 2300 MHz (N40), TD-NR 2500 MHz (N41), TD-NR 3600 MHz (N48), NR 1700/2000 MHz (N70), NR 1700/2100 MHz (N66), TD-NR 3700 MHz (N77), TD-NR 3500 MHz (N78), TD-NR 4700 MHz (N79) bands",
+            "sim_mobile_data": "GPRS (Class unspecified), EDGE (Class unspecified), UMTS 384 kbps (W-CDMA), HSUPA (Cat. unspecified), HSUPA 5.76 Mbps (Cat. 6), HSDPA (Cat. unspecified), HSPA+ 21.1 Mbps (Cat. 18), DC-HSDPA 42.2 Mbps (Cat. 24), LTE (Cat. unspecified), LTE 100 Mbps / 50 Mbps (Cat. 3), LTE 150 Mbps / 50 Mbps (Cat. 4), LTE 300 Mbps / 50 Mbps (Cat. 6), LTE 300 Mbps / 75 Mbps (Cat. 5), LTE 400 Mbps / 150 Mbps (LTE Cat. 13), LTE 450 Mbps / 50 Mbps (LTE Cat. 9), LTE 450 Mbps / 100 Mbps (LTE Cat. 10), LTE 600 Mbps / 50 Mbps (LTE Cat. 11), LTE 600 Mbps / 100 Mbps (LTE Cat. 12), LTE 1 Gbps / 100 Mbps (LTE Cat. 16), LTE 1.6 Gbps (LTE Cat. 19), NR 1.5 Gbps, NR 2.6 Gbps, NR 3.7 Gbps data links",
+            "sim_ii_slot": "Nano-SIM (4FF)",
+            "sim_ii_frequencies": "GSM 850MHz (B5), GSM 900MHz (B8), GSM 1800MHz (B3), GSM 1900MHz (PCS, B2), UMTS 2100MHz (Band I, IMT), UMTS 1900MHz (Band II, PCS), UMTS 1700/2100MHz (Band IV, AWS), UMTS 850MHz (Band V, CLR), UMTS 900MHz (Band VIII), LTE 2100 MHz (Band 1), LTE 1900 MHz (Band 2, PCS), LTE 1800 MHz (Band 3), LTE 1700/2100 MHz (Band 4, AWS), LTE 850 MHz (Band 5), LTE 2600 MHz (Band 7), LTE 900 MHz (Band 8), LTE 700 MHz (Band 12), LTE 700 MHz (Band 13), LTE 700 MHz (Band 17), LTE 800 MHz (Band 18), LTE 800 MHz (Band 19), LTE 800 MHz (Band 20), LTE 1900 MHz (Band 25), LTE 850 MHz (Band 26), LTE 700 MHz (Band 28), LTE 2300 MHz (Band 30), LTE 1500 MHz (Band 32), TD-LTE 2000 MHz (Band XXXIV), TD-LTE 2600 MHz (Band 38), TD-LTE 1900 MHz (Band 39), TD-LTE 2300 MHz (Band XL), TD-LTE 2500 MHz (Band XLI), TD-LTE 3500 MHz (Band XLII), TD-LTE 5900 MHz (Band XLVI), TD-LTE 3600 MHz (Band 48), LTE 1700/2100 MHz (Band 66), NR 2100 MHz (N1), NR 1900 MHz (N2, PCS), NR 1800 MHz (N3), NR 850 MHz (N5), NR 2600 MHz (N7), NR 900 MHz (N8), NR 700 MHz (N12), NR 800 MHz (N20), NR 850 MHz (N26), NR 1900 MHz (N25), NR 700 MHz (N28), NR 2300 MHz (N30), TD-NR 2600 MHz (N38), TD-NR 2300 MHz (N40), TD-NR 2500 MHz (N41), TD-NR 3600 MHz (N48), NR 1700/2000 MHz (N70), NR 1700/2100 MHz (N66), TD-NR 3700 MHz (N77), TD-NR 3500 MHz (N78), TD-NR 4700 MHz (N79)",
+            "sim_ii_mobile_data": "GPRS (Class unspecified), EDGE (Class unspecified), UMTS 384 kbps (W-CDMA), HSUPA (Cat. unspecified), HSUPA 5.76 Mbps (Cat. 6), HSDPA (Cat. unspecified), HSPA+ 21.1 Mbps (Cat. 18), DC-HSDPA 42.2 Mbps (Cat. 24), LTE 100 Mbps / 50 Mbps (Cat. 3), LTE 150 Mbps / 50 Mbps (Cat. 4), LTE 300 Mbps / 50 Mbps (Cat. 6), LTE 300 Mbps / 75 Mbps (Cat. 5), LTE 300 Mbps / 100 Mbps (Cat. 7), LTE 400 Mbps / 150 Mbps (LTE Cat. 13), LTE 450 Mbps / 50 Mbps (LTE Cat. 9), LTE 450 Mbps / 100 Mbps (LTE Cat. 10), LTE 600 Mbps / 50 Mbps (LTE Cat. 11), LTE 600 Mbps / 100 Mbps (LTE Cat. 12), LTE 1 Gbps / 100 Mbps (LTE Cat. 16), LTE 1.6 Gbps (LTE Cat. 19), NR 1.5 Gbps, NR 2.6 Gbps, NR 3.7 Gbps",
+            "sim_ii_module": "Qualcomm Snapdragon X65M",
+            "dual_sim_type": "Dual standby",
+            "carrier": "China Mobile Limited China Telecom Corporation Limited China Unicom Netcom Limited Hong Kong CSL Mobile Limited",
+            "generation": "5G",
+            "sim_type": "Dual"
+          },
+          "wireless": {
+            "bluetooth_version": " 5.3",
+            "bluetooth_profiles": "A2DP, A2DP with aptX codec, A2DP with aptX HD codec, AVRCP, HFP, HID, MAP, PAN, PBA",
+            "wifi": "IEEE 802.11a, IEEE 802.11b, IEEE 802.11g, IEEE 802.11n, IEEE 802.11ac, IEEE 802.11ax (Wi-Fi 6)",
+            "wifi_features": "Wi-Fi Calling (UMA), Wi-Fi Calling (VoWiFi)",
+            "experiences": "FM Radio,  NFC"
+          },
+          "battery": {
+            "type": "Lithium-ion — 1 cell",
+            "cell_i": "4325 mAh",
+            "capacity": "4325 mAh",
+            "voltage": "3.86 Volts",
+            "energy": "16.69 Wh",
+            "wireless_charging": "Qi wireless charging, MagSafe",
+            "charging_power": "20.0 W",
+            "wireless_charging_power": "15.0 W",
+            "style": "Non Removable"
+          },
+          "location": {
+            "additional_features": "GPS,  Galileo,  BeiDou,  GLONASS"
+          },
+          "sar": {
+            "head_(usa)": "1.140 W/kg",
+            "head_(eu)": "0.990 W/kg",
+            "body_(usa)": "1.150 W/kg",
+            "body_(eu)": "0.980 W/kg"
+          }
+        },
+        "No": {
+          "Expansion": "Expandable Storage",
+          "FM_Radio": "FM Radio"
+        }
+      },
+      {
+        "product": {
+          "brand": "Apple",
+          "manufacturer": "Foxconn",
+          "model": "Apple iPhone 14 Plus",
+          "version": "A2887",
+          "category": "Smartphones",
+          "region": "Asia, Eastern Europe, Europe",
+          "country": "Armenia, Belarus, Kazakhstan, Kyrgyzstan, Russia",
+          "alias": "Apple iPhone 14,8",
+          "id": "63e96260ff7af4b68a303c70"
+        },
+        "key_aspects": {
+          "msrp": "1354, 1504, 1805 USD",
+          "release_date": "2022-10-01",
+          "color_options": "Midnight, Purple, Starlight, Blue, Red",
+          "camera": "12.2 MP main back camera, 12.2 MP secondary back camera, 12.2 MP front camera",
+          "os": "Apple iOS / iPadOS, Apple iOS 16",
+          "processor": "Apple A15 Bionic APL1007 / APL1W07 (T8110)",
+          "ram": "6 GB",
+          "storage": "128 GB, 256 GB, 512 GB",
+          "wireless_&_cellular": "5G, Dual SIM (e-SIM (embedded)), Bluetooth  5.3, and  IEEE 802.11ax (Wi-Fi 6)",
+          "additional_features": "Voice Command, Navigation software, Augmented Reality (AR), Intelligent personal assistant, Voice Recognition, Face Recognition, GPS,  Galileo,  BeiDou,  GLONASS"
+        },
+        "image": {
+          "front": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/9a1a98bc-e6b3-4969-a4ac-89034ea7d283_front.jpg",
+          "back": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/e334ead4-34c2-4446-9b83-a7a57b5657b5_back.jpg"
+        },
+        "date": {
+          "released": "2022-10-01",
+          "announced": "2022 Sep 7"
+        },
+        "price": {
+          "msrp": "1354, 1504, 1805 USD"
+        },
+        "design": {
+          "body": {
+            "height": "160.8 mm, 6.33 inch",
+            "width": "78.1 mm, 3.07 inch",
+            "weight": "203 g, 7.16 ounces",
+            "thickness": "7.8 mm, 0.31 inches",
+            "ip_rating": "IP68",
+            "color": "Midnight, Purple, Starlight, Blue, Red"
+          }
+        },
+        "display": {
+          "type": "Super Retina XDR",
+          "diagonal": "169.7 mm, 6.7 inch",
+          "resolution_(h_x_w)": "1284x2778",
+          "pixel_density": "458 PPI",
+          "refresh_rate": "60 Hz",
+          "width": "71.2 mm, 2.8 inch",
+          "height": "154.04 mm, 6.06 inch",
+          "illumination": "Self-illuminating",
+          "dynamic_range": "10 bit",
+          "pixel_size": "0.05545 mm/pixel",
+          "color_depth": "30 bit",
+          "subpixels": "The data will be added shortly",
+          "number_of_colors": "1073.7M",
+          "screen_to_body_ratio": "87.3%",
+          "bezel_width": "6.9 mm, 0.27 inch(es)",
+          "lcd_mode": "The data will be added shortly",
+          "touchpoints": "10",
+          "glass": "Ceramic shield",
+          "notch": "1",
+          "touch_screen_type": "Capacitive"
+        },
+        "camera": {
+          "back_camera": {
+            "focus": "Phase-Detection Autofocus (PD AF)",
+            "resolution": "12.2 MP",
+            "resolution_(h_x_w)": "4032x3024 pixel",
+            "video_format": "3G2, HEVC",
+            "video_resolution": "3840x2160 pixel, 60 fps",
+            "image_format": "JPG, HEIF",
+            "pixel_size": "1.90 micrometer",
+            "zoom": "2.0 x optical zoom, 5.0 x digital zoom",
+            "flash": "single LED",
+            "aperture_(w)": "f/1.50",
+            "features": "Video Stabilizer (EIS), Optical Image Stabilization (OIS), Video Stabilizer (OIS), HDR photo, HDR video, Red-eye effect reduction, Slow motion video, Burst mode, Touch focus, Macro mode, Panorama Photo, Face detection, Face tagging, Smile detection, Face retouch, Intelligent scene detection",
+            "sensor": "BSI CMOS",
+            "sensor_format": "1/1.70",
+            "equivalent_focal_length": "26 mm"
+          },
+          "back_camera_ii": {
+            "resolution": "12.2 MP",
+            "sensor": "BSI CMOS",
+            "aperture_(w)": "f/2.40",
+            "features": "HDR photo, Slow motion video, Burst mode, Touch focus, Panorama Photo, Face detection, Face tagging, Smile detection, Face retouch, Intelligent scene detection",
+            "sensor_format": "1/3.00",
+            "equivalent_focal_length": "13 mm"
+          },
+          "front_camera": {
+            "focus": "Phase-Detection Autofocus (PD AF)",
+            "resolution": "12.2 MP",
+            "resolution_(h_x_w)": "4032x3024 pixel",
+            "video_resolution": "3840x2160 pixel, 60 fps",
+            "video_format": "3G2, HEVC",
+            "image_format": "JPG, HEIF",
+            "pixel_size": "1.00 micrometer",
+            "aperture_(w)": "f/1.90",
+            "features": "Electronic Image Stabilizer (EIS), Video Stabilizer (EIS), HDR photo, HDR video, Slow motion video, Burst mode, Panorama Photo, Face detection, Smile detection, Face retouch",
+            "sensor": "BSI CMOS",
+            "sensor_format": "1/3.60",
+            "minimum_focal_length": "23 mm"
+          },
+          "front_camera_ii": {
+            "sensor": "Mono CMOS"
+          }
+        },
+        "inside": {
+          "software": {
+            "os": "Apple iOS / iPadOS",
+            "os_version": "Apple iOS 16",
+            "additional_features": "Voice Command, Navigation software, Augmented Reality (AR), Intelligent personal assistant, Voice Recognition, Face Recognition"
+          },
+          "processor": {
+            "cpu": "Apple A15 Bionic APL1007 / APL1W07 (T8110)",
+            "cpu_clock_speed": "3233 MHz",
+            "gpu": "Apple A15MP5"
+          },
+          "ram": {
+            "type": "LPDDR4x SDRAM",
+            "capacity": "6 GB",
+            "clock_speed": "2133 MHz"
+          },
+          "storage": {
+            "type": "Flash EEPROM",
+            "capacity": "128 GB, 256 GB, 512 GB"
+          },
+          "audio": {
+            "channel": "stereo",
+            "output": "Proprietary",
+            "hearing_aid_compatibility": "M3, T4",
+            "microphone_input": "Proprietary",
+            "microphone": "3",
+            "av_out": " Proprietary",
+            "av_resolution": "3840x2160 (2160p) 4K UHD"
+          },
+          "cellular": {
+            "sim_slot": "e-SIM (embedded)",
+            "sim_frequencies": "GSM 850MHz (B5), GSM 900MHz (B8), GSM 1800MHz (B3), GSM 1900MHz (PCS, B2), UMTS 2100MHz (Band I, IMT), UMTS 1900MHz (Band II, PCS), UMTS 1700/2100MHz (Band IV, AWS), UMTS 850MHz (Band V, CLR), UMTS 900MHz (Band VIII), LTE 2100 MHz (Band 1), LTE 1900 MHz (Band 2, PCS), LTE 1800 MHz (Band 3), LTE 1700/2100 MHz (Band 4, AWS), LTE 850 MHz (Band 5), LTE 2600 MHz (Band 7), LTE 900 MHz (Band 8), LTE 700 MHz (Band 12), LTE 700 MHz (Band 13), LTE 700 MHz (Band 17), LTE 800 MHz (Band 18), LTE 800 MHz (Band 19), LTE 800 MHz (Band 20), LTE 1900 MHz (Band 25), LTE 850 MHz (Band 26), LTE 700 MHz (Band 28), LTE 2300 MHz (Band 30), LTE 1500 MHz (Band 32), TD-LTE 2000 MHz (Band XXXIV), TD-LTE 2600 MHz (Band 38), TD-LTE 1900 MHz (Band 39), TD-LTE 2300 MHz (Band XL), TD-LTE 2500 MHz (Band XLI), TD-LTE 3500 MHz (Band XLII), TD-LTE 5900 MHz (Band XLVI), TD-LTE 3600 MHz (Band 48), LTE 1700/2100 MHz (Band 66), NR 2100 MHz (N1), NR 1900 MHz (N2, PCS), NR 1800 MHz (N3), NR 850 MHz (N5), NR 2600 MHz (N7), NR 900 MHz (N8), NR 700 MHz (N12), NR 800 MHz (N20), NR 850 MHz (N26), NR 1900 MHz (N25), NR 700 MHz (N28), NR 2300 MHz (N30), TD-NR 2600 MHz (N38), TD-NR 2300 MHz (N40), TD-NR 2500 MHz (N41), TD-NR 3600 MHz (N48), NR 1700/2000 MHz (N70), NR 1700/2100 MHz (N66), TD-NR 3700 MHz (N77), TD-NR 3500 MHz (N78), TD-NR 4700 MHz (N79) bands",
+            "sim_mobile_data": "GPRS (Class unspecified), EDGE (Class unspecified), UMTS 384 kbps (W-CDMA), HSUPA (Cat. unspecified), HSUPA 5.76 Mbps (Cat. 6), HSDPA (Cat. unspecified), HSPA+ 21.1 Mbps (Cat. 18), DC-HSDPA 42.2 Mbps (Cat. 24), LTE (Cat. unspecified), LTE 100 Mbps / 50 Mbps (Cat. 3), LTE 150 Mbps / 50 Mbps (Cat. 4), LTE 300 Mbps / 50 Mbps (Cat. 6), LTE 300 Mbps / 75 Mbps (Cat. 5), LTE 400 Mbps / 150 Mbps (LTE Cat. 13), LTE 450 Mbps / 50 Mbps (LTE Cat. 9), LTE 450 Mbps / 100 Mbps (LTE Cat. 10), LTE 600 Mbps / 50 Mbps (LTE Cat. 11), LTE 600 Mbps / 100 Mbps (LTE Cat. 12), LTE 1 Gbps / 100 Mbps (LTE Cat. 16), LTE 1.6 Gbps (LTE Cat. 19), NR 1.5 Gbps, NR 2.6 Gbps, NR 3.7 Gbps data links",
+            "sim_ii_slot": "e-SIM (embedded)",
+            "sim_ii_frequencies": "GSM 850MHz (B5), GSM 900MHz (B8), GSM 1800MHz (B3), GSM 1900MHz (PCS, B2), UMTS 2100MHz (Band I, IMT), UMTS 1900MHz (Band II, PCS), UMTS 1700/2100MHz (Band IV, AWS), UMTS 850MHz (Band V, CLR), UMTS 900MHz (Band VIII), LTE 2100 MHz (Band 1), LTE 1900 MHz (Band 2, PCS), LTE 1800 MHz (Band 3), LTE 1700/2100 MHz (Band 4, AWS), LTE 850 MHz (Band 5), LTE 2600 MHz (Band 7), LTE 900 MHz (Band 8), LTE 700 MHz (Band 12), LTE 700 MHz (Band 13), LTE 700 MHz (Band 17), LTE 800 MHz (Band 18), LTE 800 MHz (Band 19), LTE 800 MHz (Band 20), LTE 1900 MHz (Band 25), LTE 850 MHz (Band 26), LTE 700 MHz (Band 28), LTE 2300 MHz (Band 30), LTE 1500 MHz (Band 32), TD-LTE 2000 MHz (Band XXXIV), TD-LTE 2600 MHz (Band 38), TD-LTE 1900 MHz (Band 39), TD-LTE 2300 MHz (Band XL), TD-LTE 2500 MHz (Band XLI), TD-LTE 3500 MHz (Band XLII), TD-LTE 5900 MHz (Band XLVI), TD-LTE 3600 MHz (Band 48), LTE 1700/2100 MHz (Band 66), NR 2100 MHz (N1), NR 1900 MHz (N2, PCS), NR 1800 MHz (N3), NR 850 MHz (N5), NR 2600 MHz (N7), NR 900 MHz (N8), NR 700 MHz (N12), NR 800 MHz (N20), NR 850 MHz (N26), NR 1900 MHz (N25), NR 700 MHz (N28), NR 2300 MHz (N30), TD-NR 2600 MHz (N38), TD-NR 2300 MHz (N40), TD-NR 2500 MHz (N41), TD-NR 3600 MHz (N48), NR 1700/2000 MHz (N70), NR 1700/2100 MHz (N66), TD-NR 3700 MHz (N77), TD-NR 3500 MHz (N78), TD-NR 4700 MHz (N79)",
+            "sim_ii_mobile_data": "GPRS (Class unspecified), EDGE (Class unspecified), UMTS 384 kbps (W-CDMA), HSUPA (Cat. unspecified), HSUPA 5.76 Mbps (Cat. 6), HSDPA (Cat. unspecified), HSPA+ 21.1 Mbps (Cat. 18), DC-HSDPA 42.2 Mbps (Cat. 24), LTE 100 Mbps / 50 Mbps (Cat. 3), LTE 150 Mbps / 50 Mbps (Cat. 4), LTE 300 Mbps / 50 Mbps (Cat. 6), LTE 300 Mbps / 75 Mbps (Cat. 5), LTE 300 Mbps / 100 Mbps (Cat. 7), LTE 400 Mbps / 150 Mbps (LTE Cat. 13), LTE 450 Mbps / 50 Mbps (LTE Cat. 9), LTE 450 Mbps / 100 Mbps (LTE Cat. 10), LTE 600 Mbps / 50 Mbps (LTE Cat. 11), LTE 600 Mbps / 100 Mbps (LTE Cat. 12), LTE 1 Gbps / 100 Mbps (LTE Cat. 16), LTE 1.6 Gbps (LTE Cat. 19), NR 1.5 Gbps, NR 2.6 Gbps, NR 3.7 Gbps",
+            "sim_ii_module": "Qualcomm Snapdragon X65M",
+            "dual_sim_type": "Dual standby",
+            "carrier": "Kcell JSC MTS Russia",
+            "generation": "5G",
+            "sim_type": "Dual"
+          },
+          "wireless": {
+            "bluetooth_version": " 5.3",
+            "bluetooth_profiles": "A2DP, A2DP with aptX codec, A2DP with aptX HD codec, AVRCP, HFP, HID, MAP, PAN, PBA",
+            "wifi": "IEEE 802.11a, IEEE 802.11b, IEEE 802.11g, IEEE 802.11n, IEEE 802.11ac, IEEE 802.11ax (Wi-Fi 6)",
+            "wifi_features": "Wi-Fi Calling (UMA), Wi-Fi Calling (VoWiFi)",
+            "experiences": "FM Radio,  NFC"
+          },
+          "battery": {
+            "type": "Lithium-ion — 1 cell",
+            "cell_i": "4325 mAh",
+            "capacity": "4325 mAh",
+            "voltage": "3.86 Volts",
+            "energy": "16.69 Wh",
+            "wireless_charging": "Qi wireless charging, MagSafe",
+            "charging_power": "20.0 W",
+            "wireless_charging_power": "15.0 W",
+            "style": "Non Removable"
+          },
+          "location": {
+            "additional_features": "GPS,  Galileo,  BeiDou,  GLONASS"
+          },
+          "sar": {
+            "head_(usa)": "1.140 W/kg",
+            "head_(eu)": "0.990 W/kg",
+            "body_(usa)": "1.150 W/kg",
+            "body_(eu)": "0.980 W/kg"
+          }
+        },
+        "No": {
+          "Expansion": "Expandable Storage",
+          "FM_Radio": "FM Radio"
+        }
+      },
+      {
+        "product": {
+          "brand": "Apple",
+          "manufacturer": "Foxconn",
+          "model": "Apple iPhone 14 Plus",
+          "version": "A2885",
+          "category": "Smartphones",
+          "region": "Asia, Middle East, North America (NA)",
+          "country": "Canada, Japan, Mexico, Saudi Arabia",
+          "alias": "Apple iPhone 14,8",
+          "id": "63e96260ff7af4b68a303c6c"
+        },
+        "key_aspects": {
+          "msrp": "934, 1046, 1248 USD",
+          "release_date": "2022-10-01",
+          "color_options": "Midnight, Purple, Starlight, Blue, Red",
+          "camera": "12.2 MP main back camera, 12.2 MP secondary back camera, 12.2 MP front camera",
+          "os": "Apple iOS / iPadOS, Apple iOS 16",
+          "processor": "Apple A15 Bionic APL1007 / APL1W07 (T8110)",
+          "ram": "6 GB",
+          "storage": "128 GB, 256 GB, 512 GB",
+          "wireless_&_cellular": "5G, Dual SIM (e-SIM (embedded)), Bluetooth  5.3, and  IEEE 802.11ax (Wi-Fi 6)",
+          "additional_features": "Voice Command, Navigation software, Augmented Reality (AR), Intelligent personal assistant, Voice Recognition, Face Recognition, GPS,  Galileo,  BeiDou,  GLONASS"
+        },
+        "image": {
+          "front": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/eca18675-18b4-4b4f-8056-7fc65b38a5c5_front.jpg",
+          "back": "https://i-techspecs-io.s3.us-west-1.amazonaws.com/d41b2a65-fc45-48be-9620-c6c4f25e499b_back.jpg"
+        },
+        "date": {
+          "released": "2022-10-01",
+          "announced": "2022 Sep 7"
+        },
+        "price": {
+          "msrp": "934, 1046, 1248 USD"
+        },
+        "design": {
+          "body": {
+            "height": "160.8 mm, 6.33 inch",
+            "width": "78.1 mm, 3.07 inch",
+            "weight": "203 g, 7.16 ounces",
+            "thickness": "7.8 mm, 0.31 inches",
+            "ip_rating": "IP68",
+            "color": "Midnight, Purple, Starlight, Blue, Red"
+          }
+        },
+        "display": {
+          "type": "Super Retina XDR",
+          "diagonal": "169.7 mm, 6.7 inch",
+          "resolution_(h_x_w)": "1284x2778",
+          "pixel_density": "458 PPI",
+          "refresh_rate": "60 Hz",
+          "width": "71.2 mm, 2.8 inch",
+          "height": "154.04 mm, 6.06 inch",
+          "illumination": "Self-illuminating",
+          "dynamic_range": "10 bit",
+          "pixel_size": "0.05545 mm/pixel",
+          "color_depth": "30 bit",
+          "subpixels": "The data will be added shortly",
+          "number_of_colors": "1073.7M",
+          "screen_to_body_ratio": "87.3%",
+          "bezel_width": "6.9 mm, 0.27 inch(es)",
+          "lcd_mode": "The data will be added shortly",
+          "touchpoints": "10",
+          "glass": "Ceramic shield",
+          "notch": "1",
+          "touch_screen_type": "Capacitive"
+        },
+        "camera": {
+          "back_camera": {
+            "focus": "Phase-Detection Autofocus (PD AF)",
+            "resolution": "12.2 MP",
+            "resolution_(h_x_w)": "4032x3024 pixel",
+            "video_format": "3G2, HEVC",
+            "video_resolution": "3840x2160 pixel, 60 fps",
+            "image_format": "JPG, HEIF",
+            "pixel_size": "1.90 micrometer",
+            "zoom": "2.0 x optical zoom, 5.0 x digital zoom",
+            "flash": "single LED",
+            "aperture_(w)": "f/1.50",
+            "features": "Video Stabilizer (EIS), Optical Image Stabilization (OIS), Video Stabilizer (OIS), HDR photo, HDR video, Red-eye effect reduction, Slow motion video, Burst mode, Touch focus, Macro mode, Panorama Photo, Face detection, Face tagging, Smile detection, Face retouch, Intelligent scene detection",
+            "sensor": "BSI CMOS",
+            "sensor_format": "1/1.70",
+            "equivalent_focal_length": "26 mm"
+          },
+          "back_camera_ii": {
+            "resolution": "12.2 MP",
+            "sensor": "BSI CMOS",
+            "aperture_(w)": "f/2.40",
+            "features": "HDR photo, Slow motion video, Burst mode, Touch focus, Panorama Photo, Face detection, Face tagging, Smile detection, Face retouch, Intelligent scene detection",
+            "sensor_format": "1/3.00",
+            "equivalent_focal_length": "13 mm"
+          },
+          "front_camera": {
+            "focus": "Phase-Detection Autofocus (PD AF)",
+            "resolution": "12.2 MP",
+            "resolution_(h_x_w)": "4032x3024 pixel",
+            "video_resolution": "3840x2160 pixel, 60 fps",
+            "video_format": "3G2, HEVC",
+            "image_format": "JPG, HEIF",
+            "pixel_size": "1.00 micrometer",
+            "aperture_(w)": "f/1.90",
+            "features": "Electronic Image Stabilizer (EIS), Video Stabilizer (EIS), HDR photo, HDR video, Slow motion video, Burst mode, Panorama Photo, Face detection, Smile detection, Face retouch",
+            "sensor": "BSI CMOS",
+            "sensor_format": "1/3.60",
+            "minimum_focal_length": "23 mm"
+          },
+          "front_camera_ii": {
+            "sensor": "Mono CMOS"
+          }
+        },
+        "inside": {
+          "software": {
+            "os": "Apple iOS / iPadOS",
+            "os_version": "Apple iOS 16",
+            "additional_features": "Voice Command, Navigation software, Augmented Reality (AR), Intelligent personal assistant, Voice Recognition, Face Recognition"
+          },
+          "processor": {
+            "cpu": "Apple A15 Bionic APL1007 / APL1W07 (T8110)",
+            "cpu_clock_speed": "3233 MHz",
+            "gpu": "Apple A15MP5"
+          },
+          "ram": {
+            "type": "LPDDR4x SDRAM",
+            "capacity": "6 GB",
+            "clock_speed": "2133 MHz"
+          },
+          "storage": {
+            "type": "Flash EEPROM",
+            "capacity": "128 GB, 256 GB, 512 GB"
+          },
+          "audio": {
+            "channel": "stereo",
+            "output": "Proprietary",
+            "hearing_aid_compatibility": "M3, T4",
+            "microphone_input": "Proprietary",
+            "microphone": "3",
+            "av_out": " Proprietary",
+            "av_resolution": "3840x2160 (2160p) 4K UHD"
+          },
+          "cellular": {
+            "sim_slot": "e-SIM (embedded)",
+            "sim_frequencies": "GSM 850MHz (B5), GSM 900MHz (B8), GSM 1800MHz (B3), GSM 1900MHz (PCS, B2), UMTS 2100MHz (Band I, IMT), UMTS 1900MHz (Band II, PCS), UMTS 1700/2100MHz (Band IV, AWS), UMTS 850MHz (Band V, CLR), UMTS 900MHz (Band VIII), LTE 2100 MHz (Band 1), LTE 1900 MHz (Band 2, PCS), LTE 1800 MHz (Band 3), LTE 1700/2100 MHz (Band 4, AWS), LTE 850 MHz (Band 5), LTE 2600 MHz (Band 7), LTE 900 MHz (Band 8), LTE 1500 MHz (Band 11), LTE 700 MHz (Band 12), LTE 700 MHz (Band 13), LTE 700 MHz (Band XIV), LTE 700 MHz (Band 17), LTE 800 MHz (Band 18), LTE 800 MHz (Band 19), LTE 800 MHz (Band 20), LTE 1500 MHz (Band XXI), LTE 1900 MHz (Band 25), LTE 850 MHz (Band 26), LTE 700 MHz (Band 28), LTE 700 MHz (Band 29), LTE 2300 MHz (Band 30), LTE 1500 MHz (Band 32), TD-LTE 2000 MHz (Band XXXIV), TD-LTE 2600 MHz (Band 38), TD-LTE 1900 MHz (Band 39), TD-LTE 2300 MHz (Band XL), TD-LTE 2500 MHz (Band XLI), TD-LTE 3500 MHz (Band XLII), TD-LTE 5900 MHz (Band XLVI), TD-LTE 3600 MHz (Band 48), TD-LTE 2400 MHz (Band LIII), LTE 1700/2100 MHz (Band 66), LTE 600 MHz (Band 71), NR 2100 MHz (N1), NR 1900 MHz (N2, PCS), NR 1800 MHz (N3), NR 850 MHz (N5), NR 2600 MHz (N7), NR 900 MHz (N8), NR 700 MHz (N12), NR 700 MHz (N14), NR 800 MHz (N20), NR 850 MHz (N26), NR 1900 MHz (N25), NR 700 MHz (N28), NR 700 MHz (N29), NR 2300 MHz (N30), TD-NR 2600 MHz (N38), TD-NR 2300 MHz (N40), TD-NR 2500 MHz (N41), TD-NR 3600 MHz (N48), NR 2400 MHz (N53), NR 1700/2100 MHz (N66), NR 1700/2000 MHz (N70), NR 600 MHz (N71), TD-NR 3700 MHz (N77), TD-NR 3500 MHz (N78), TD-NR 4700 MHz (N79) bands",
+            "sim_mobile_data": "GPRS (Class unspecified), EDGE (Class unspecified), UMTS 384 kbps (W-CDMA), HSUPA (Cat. unspecified), HSUPA 5.76 Mbps (Cat. 6), HSDPA (Cat. unspecified), HSPA+ 21.1 Mbps (Cat. 18), DC-HSDPA 42.2 Mbps (Cat. 24), LTE (Cat. unspecified), LTE 100 Mbps / 50 Mbps (Cat. 3), LTE 150 Mbps / 50 Mbps (Cat. 4), LTE 300 Mbps / 50 Mbps (Cat. 6), LTE 300 Mbps / 75 Mbps (Cat. 5), LTE 400 Mbps / 150 Mbps (LTE Cat. 13), LTE 450 Mbps / 50 Mbps (LTE Cat. 9), LTE 450 Mbps / 100 Mbps (LTE Cat. 10), LTE 600 Mbps / 50 Mbps (LTE Cat. 11), LTE 600 Mbps / 100 Mbps (LTE Cat. 12), LTE 1 Gbps / 100 Mbps (LTE Cat. 16), LTE 1.6 Gbps (LTE Cat. 19), NR 1.5 Gbps, NR 2.6 Gbps, NR 3.7 Gbps data links",
+            "sim_ii_slot": "e-SIM (embedded)",
+            "sim_ii_frequencies": "GSM 850MHz (B5), GSM 900MHz (B8), GSM 1800MHz (B3), GSM 1900MHz (PCS, B2), UMTS 2100MHz (Band I, IMT), UMTS 1900MHz (Band II, PCS), UMTS 1700/2100MHz (Band IV, AWS), UMTS 850MHz (Band V, CLR), UMTS 900MHz (Band VIII), LTE 2100 MHz (Band 1), LTE 1900 MHz (Band 2, PCS), LTE 1800 MHz (Band 3), LTE 1700/2100 MHz (Band 4, AWS), LTE 850 MHz (Band 5), LTE 2600 MHz (Band 7), LTE 900 MHz (Band 8), LTE 1500 MHz (Band 11), LTE 700 MHz (Band 12), LTE 700 MHz (Band 13), LTE 700 MHz (Band XIV), LTE 700 MHz (Band 17), LTE 800 MHz (Band 18), LTE 800 MHz (Band 19), LTE 800 MHz (Band 20), LTE 1500 MHz (Band XXI), LTE 1900 MHz (Band 25), LTE 850 MHz (Band 26), LTE 700 MHz (Band 28), LTE 700 MHz (Band 29), LTE 2300 MHz (Band 30), LTE 1500 MHz (Band 32), TD-LTE 2000 MHz (Band XXXIV), TD-LTE 2600 MHz (Band 38), TD-LTE 1900 MHz (Band 39), TD-LTE 2300 MHz (Band XL), TD-LTE 2500 MHz (Band XLI), TD-LTE 3500 MHz (Band XLII), TD-LTE 5900 MHz (Band XLVI), TD-LTE 3600 MHz (Band 48), TD-LTE 2400 MHz (Band LIII), LTE 1700/2100 MHz (Band 66), LTE 600 MHz (Band 71), NR 2100 MHz (N1), NR 1900 MHz (N2, PCS), NR 1800 MHz (N3), NR 850 MHz (N5), NR 2600 MHz (N7), NR 900 MHz (N8), NR 700 MHz (N12), NR 700 MHz (N14), NR 800 MHz (N20), NR 850 MHz (N26), NR 1900 MHz (N25), NR 700 MHz (N28), NR 700 MHz (N29), NR 2300 MHz (N30), TD-NR 2600 MHz (N38), TD-NR 2300 MHz (N40), TD-NR 2500 MHz (N41), TD-NR 3600 MHz (N48), NR 2400 MHz (N53), NR 1700/2100 MHz (N66), NR 1700/2000 MHz (N70), NR 600 MHz (N71), TD-NR 3700 MHz (N77), TD-NR 3500 MHz (N78), TD-NR 4700 MHz (N79)",
+            "sim_ii_mobile_data": "GPRS (Class unspecified), EDGE (Class unspecified), UMTS 384 kbps (W-CDMA), HSUPA (Cat. unspecified), HSUPA 5.76 Mbps (Cat. 6), HSDPA (Cat. unspecified), HSPA+ 21.1 Mbps (Cat. 18), DC-HSDPA 42.2 Mbps (Cat. 24), LTE 100 Mbps / 50 Mbps (Cat. 3), LTE 150 Mbps / 50 Mbps (Cat. 4), LTE 300 Mbps / 50 Mbps (Cat. 6), LTE 300 Mbps / 75 Mbps (Cat. 5), LTE 300 Mbps / 100 Mbps (Cat. 7), LTE 400 Mbps / 150 Mbps (LTE Cat. 13), LTE 450 Mbps / 50 Mbps (LTE Cat. 9), LTE 450 Mbps / 100 Mbps (LTE Cat. 10), LTE 600 Mbps / 50 Mbps (LTE Cat. 11), LTE 600 Mbps / 100 Mbps (LTE Cat. 12), LTE 1 Gbps / 100 Mbps (LTE Cat. 16), LTE 1.6 Gbps (LTE Cat. 19), NR 1.5 Gbps, NR 2.6 Gbps, NR 3.7 Gbps",
+            "sim_ii_module": "Qualcomm Snapdragon X65M",
+            "dual_sim_type": "Dual standby",
+            "carrier": "AT&T Mobility Bell Mobility Fido Solutions Iusacell KDDI Corporation NTT DoCoMo Rakuten Mobile Rogers Wireless Saudi Telecom Company SoftBank Corp. Tbaytel CA TELCEL Telus Mobility Videotron GP Wind Mobile Canada / Freedom Mobile",
+            "generation": "5G",
+            "sim_type": "Dual"
+          },
+          "wireless": {
+            "bluetooth_version": " 5.3",
+            "bluetooth_profiles": "A2DP, A2DP with aptX codec, A2DP with aptX HD codec, AVRCP, HFP, HID, MAP, PAN, PBA",
+            "wifi": "IEEE 802.11a, IEEE 802.11b, IEEE 802.11g, IEEE 802.11n, IEEE 802.11ac, IEEE 802.11ax (Wi-Fi 6)",
+            "wifi_features": "Wi-Fi Calling (UMA), Wi-Fi Calling (VoWiFi)",
+            "experiences": "FM Radio,  NFC"
+          },
+          "battery": {
+            "type": "Lithium-ion — 1 cell",
+            "cell_i": "4325 mAh",
+            "capacity": "4325 mAh",
+            "voltage": "3.86 Volts",
+            "energy": "16.69 Wh",
+            "wireless_charging": "Qi wireless charging, MagSafe",
+            "charging_power": "20.0 W",
+            "wireless_charging_power": "15.0 W",
+            "style": "Non Removable"
+          },
+          "location": {
+            "additional_features": "GPS,  Galileo,  BeiDou,  GLONASS"
+          },
+          "sar": {
+            "head_(usa)": "1.140 W/kg",
+            "head_(eu)": "0.990 W/kg",
+            "body_(usa)": "1.150 W/kg",
+            "body_(eu)": "0.980 W/kg"
+          }
+        },
+        "No": {
+          "Expansion": "Expandable Storage",
+          "FM_Radio": "FM Radio"
+        }
+      }
+    ]
+  }
+}
