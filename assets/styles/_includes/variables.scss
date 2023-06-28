@@ -1,0 +1,26 @@
+@font-face{
+  font-family: Fira Sans, serif;
+  font-size: 15px;
+  font-weight: 700;
+  //line-height: 18px;
+  //letter-spacing: 0;
+  //text-align: left;
+}
+@font-face{
+  font-family: Fira Sans, serif;
+  font-size: 40px;
+  font-weight: 600;
+  //line-height: 48px;
+  //letter-spacing: 0;
+  //text-align: center;
+}
+
+
+$primary-color: #002743;
+$secondary-color: #FFCC38;
+$tertiary-color: #E62460;
+
+$border-radius-primary-button: 48px;
+$border-radius-secondary-button: 10px;
+$border-radius-tertiary-button: 5px;
+
