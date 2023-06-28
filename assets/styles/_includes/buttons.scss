@@ -1,11 +1,12 @@
-.ema-primary-button{
+.ec-primary-button{
   border-radius:$border-radius-tertiary-button ;
   background-color: $primary-color;
   color: white;
   font-size: 22px;
   align-items: center;
+  padding: 10px 20px;
 }
-.ema-secondary-button{
+.ec-secondary-button{
   border-radius:$border-radius-primary-button ;
   background-color: $secondary-color;
   color: white;
