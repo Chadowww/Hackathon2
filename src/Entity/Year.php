@@ -16,8 +16,8 @@ class Year
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(type: Types::DATE_MUTABLE, nullable: true)]
-    private ?\DateTimeInterface $ReleaseDate = null;
+    #[ORM\Column(nullable: true)]
+    private ?int $phoneAge = null;
 
     #[ORM\Column(nullable: true)]
     private ?int $valueYear = null;
@@ -27,17 +27,23 @@ class Year
         return $this->id;
     }
 
-    public function getReleaseDate(): ?\DateTimeInterface
+    /**
+     * @return int|null
+     */
+    public function getPhoneAge(): ?int
     {
-        return $this->ReleaseDate;
+        return $this->phoneAge;
     }
 
-    public function setReleaseDate(?\DateTimeInterface $ReleaseDate): static
+    /**
+     * @param int|null $phoneAge
+     */
+    public function setPhoneAge(?int $phoneAge): void
     {
-        $this->ReleaseDate = $ReleaseDate;
-
-        return $this;
+        $this->phoneAge = $phoneAge;
     }
+
+
 
     public function getvalueYear(): ?int
     {
