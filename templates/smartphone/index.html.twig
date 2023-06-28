@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Smartphone index{% endblock %}
+
+{% block body %}
+    <h1>Smartphone index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>SerialNumber</th>
+                <th>IsSold</th>
+                <th>HasCharger</th>
+                <th>CreatedAt</th>
+                <th>UpdatedAt</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for smartphone in smartphones %}
+            <tr>
+                <td>{{ smartphone.id }}</td>
+                <td>{{ smartphone.serialNumber }}</td>
+                <td>{{ smartphone.isSold ? 'Yes' : 'No' }}</td>
+                <td>{{ smartphone.hasCharger ? 'Yes' : 'No' }}</td>
+                <td>{{ smartphone.createdAt ? smartphone.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ smartphone.updatedAt ? smartphone.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
+                <td>
+                    <a href="{{ path('app_smartphone_show', {'id': smartphone.id}) }}">show</a>
+                    <a href="{{ path('app_smartphone_edit', {'id': smartphone.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_smartphone_new') }}">Create new</a>
+{% endblock %}
