@@ -4,11 +4,13 @@
 @import "_includes/buttons";
 @import "_includes/show_smartphone";
 @import "modules/navbar";
+@import "_includes/login";
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: $font-family;
 }
 a{
     text-decoration: none;
