@@ -50,6 +50,7 @@ class SmartphoneFixtures extends Fixture implements DependentFixtureInterface
             $smartphoneForFixture ->setCategory($this->getReference('category_' . $smartphone['category_code']));
             $smartphoneForFixture ->setMemory($this->getReference('memory_' . $i));
             $smartphoneForFixture ->setStorage($this->getReference('storage_' . $i));
+            $smartphoneForFixture->setReleaseDate($faker->dateTimeBetween('-10 years', 'now'));
             $smartphoneForFixture ->setCreatedAt(new \DateTime());
             $smartphoneForFixture ->setUpdatedAt(new \DateTime());
 

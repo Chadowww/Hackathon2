@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\SmartphoneRepository;
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Timestampable\Traits\TimestampableEntity;
 
@@ -32,6 +33,9 @@ class Smartphone
 
     #[ORM\ManyToOne(inversedBy: 'smartphones')]
     private ?Storage $storage = null;
+
+    #[ORM\Column(type: Types::DATE_MUTABLE, nullable: true)]
+    private ?\DateTimeInterface $release_date = null;
 
     public function getId(): ?int
     {
@@ -107,6 +111,18 @@ class Smartphone
     public function setStorage(?Storage $storage): static
     {
         $this->storage = $storage;
+
+        return $this;
+    }
+
+    public function getReleaseDate(): ?\DateTimeInterface
+    {
+        return $this->release_date;
+    }
+
+    public function setReleaseDate(?\DateTimeInterface $release_date): static
+    {
+        $this->release_date = $release_date;
 
         return $this;
     }
