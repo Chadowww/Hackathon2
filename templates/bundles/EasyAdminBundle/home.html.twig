@@ -1,0 +1,50 @@
+{% extends '@!EasyAdmin/page/content.html.twig' %}
+
+    {% block main %}
+        <div class="d-flex justify-content-center">
+            <div class="card w-75 mt-5"
+                 style="background-color: rgba(255, 255, 255, 0.95); box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.31);">
+                <div class="card-header pt-3">
+                    <h5>Bienvenue dans le tableau d'administration !</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">C'est ici que vous pouvez modifier, ajouter et supprimer des critères de calcul
+                        pour fixer le prix de vos smartphones.
+                        Pour cela, suivez les liens vers :</p>
+                    <ul>
+                        <li><i class="fas fa-memory"></i><b> Mémoire :</b> pour changer les valeurs de calcul liées à la
+                            mémoire du téléphone
+                        </li>
+                        <li><i class="fas fa-sd-card"></i><b> Stockage :</b> pour changer les valeurs de calcul liées
+                            aux capacités de stockage du téléphone
+                        </li>
+                        <li><i class="fas fa-heart"></i><b> Age :</b> pour changer les valeurs de calcul liées à
+                            l'ancienneté du téléphone
+                        </li>
+                        <li><i class="fas fa-star"></i><b> Catégorie :</b> pour changer les indices minimum et maximum
+                            de chaque catégorie, ainsi que les prix qui y sont associés
+                        </li>
+                    </ul>
+                    <p class="card-text">Ici, vous pouvez également accéder à :</p>
+                    <ul>
+                        <li><i class="fas fa-mobile"></i><b> Smartphones :</b> pour consulter la liste des smartphones
+                            déjà présents dans la base de données, modifier leurs informations et les supprimer
+                        </li>
+                        <li><i class="fas fa-user"></i><b> Bénévoles :</b> pour inscrire un nouveau bénévole, modifier
+                            ou supprimer leur compte. C'est aussi ici que vous pouvez donner à un bénévole les droits
+                            d'administration.
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer alert alert-warning m-1" role="alert">
+                    <div>
+                        <p class="mb-0"><i class="fas fa-warning pe-2"></i><b>Attention !</b></p>
+                        <p class="mb-0">Ces changements affecteront la base de données d'Emmaus Connect. Vérifiez bien
+                            que vous avez les droits requis avant de les effectuer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    {% endblock %}

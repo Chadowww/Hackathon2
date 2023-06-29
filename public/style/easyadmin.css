@@ -1,0 +1,12 @@
+:root {
+  --button-primary-bg: #002743;
+  --button-info-bg: #002743;
+  --link-color: #002743;
+  --pagination-active-bg: #002743;
+  --form-switch-checked-bg: #06ACB0;
+  --sidebar-menu-badge-active-bg: lightgrey;
+  --sidebar-menu-badge-active-color: #002743;
+  --sidebar-menu-active-item-bg: #06ACB0;
+  --sidebar-menu-active-item-color: #002743;
+  --sidebar-menu-icon-color: lightgrey;
+}
