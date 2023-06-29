@@ -4,10 +4,11 @@ namespace App\DataFixtures;
 
 use App\Entity\Smartphone;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
 use Faker\Factory;
 
-class SmartphoneFixtures extends Fixture
+class SmartphoneFixtures extends Fixture implements DependentFixtureInterface
 {
     const SMARTPHONES = [
         [
@@ -39,6 +40,7 @@ class SmartphoneFixtures extends Fixture
 
     public function load(ObjectManager $manager)
     {
+        $i = 1;
         foreach (self::SMARTPHONES as $smartphone) {
             $faker = Factory::create('fr_FR');
             $smartphoneForFixture = new Smartphone();
@@ -46,11 +48,24 @@ class SmartphoneFixtures extends Fixture
             $smartphoneForFixture ->setHasCharger($smartphone ['has_charger']);
             $smartphoneForFixture ->setIsSold($smartphone ['is_sold']);
             $smartphoneForFixture ->setCategory($this->getReference('category_' . $smartphone['category_code']));
+            $smartphoneForFixture ->setMemory($this->getReference('memory_' . $i));
+            $smartphoneForFixture ->setStorage($this->getReference('storage_' . $i));
+            $smartphoneForFixture->setReleaseDate($faker->dateTimeBetween('-10 years', 'now'));
             $smartphoneForFixture ->setCreatedAt(new \DateTime());
             $smartphoneForFixture ->setUpdatedAt(new \DateTime());
 
+            $i++;
             $manager->persist($smartphoneForFixture);
         }
         $manager->flush();
+    }
+
+    public function getDependencies()
+    {
+        return [
+            CategoryFixtures::class,
+            MemoryFixtures::class,
+            StorageFixtures::class,
+        ];
     }
 }
