@@ -54,13 +54,16 @@ class StorageFixtures extends Fixture
 
     public function load(ObjectManager $manager)
     {
+        $i = 1;
         foreach (self::STORAGEVALUES as $storage) {
             $storageForFixture = new Storage();
             $storageForFixture ->setGoStorage($storage ['go_storage']);
             $storageForFixture ->setValueStorage($storage ['value_storage']);
             $storageForFixture ->setCreatedAt(new \DateTime());
             $storageForFixture ->setUpdatedAt(new \DateTime());
+            $this->addReference('storage_' . $i, $storageForFixture);
 
+            $i++;
             $manager->persist($storageForFixture);
         }
         $manager->flush();
