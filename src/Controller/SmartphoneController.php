@@ -48,6 +48,7 @@ class SmartphoneController extends AbstractController
             $smartphone->setMemory($numericValue);
             $smartphone->setReleaseDate($date);
             $smartphone->setPhoneCondition($form->get('phoneCondition')->getData());
+            $smartphone->setIsSold(0);
             $smartphone->setCreatedAt(new \DateTime());
             $smartphone->setUpdatedAt(new \DateTime());
 
