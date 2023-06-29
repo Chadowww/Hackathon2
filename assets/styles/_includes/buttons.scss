@@ -33,3 +33,19 @@
     align-items: center;
   width: 20%;
 }
+.ec-btn {
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 50px;
+  color: #ffffff;
+  background: $quaternary-color;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 70%;
+  border: none;
+}
+
+.ec-btn:hover {
+  background: #E62460;
+  text-decoration: none;
+}
