@@ -3,6 +3,8 @@
 namespace App\Form;
 
 use App\Entity\Smartphone;
+use App\Entity\Storage;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -12,12 +14,16 @@ class SmartphoneType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('serialNumber')
-            ->add('isSold')
+            ->add('model')
             ->add('hasCharger')
-            ->add('createdAt')
-            ->add('updatedAt')
-            ->add('category')
+            ->add('storage')
+            ->add('storage', EntityType::class, [
+                'class' => Storage::class,
+                'choice_label' => 'go_storage',
+                'multiple' => false,
+                'expanded' => false,
+                'by_reference' => false,
+            ])
         ;
     }
 

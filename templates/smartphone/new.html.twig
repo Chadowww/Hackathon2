@@ -3,9 +3,13 @@
 {% block title %}New Smartphone{% endblock %}
 
 {% block body %}
+    <div class="d-flex justify-content-center">
+        <div class="d-flex flex-column">
     <h1>Create new Smartphone</h1>
 
     {{ include('smartphone/_form.html.twig') }}
 
     <a href="{{ path('app_smartphone_index') }}">back to list</a>
+    </div>
+    </div>
 {% endblock %}
