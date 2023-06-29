@@ -21,7 +21,7 @@
         {% for smartphone in smartphones %}
             <tr>
                 <td>{{ smartphone.id }}</td>
-                <td>{{ smartphone.model }}</td>
+                <td>{{ smartphone.model}}</td>
                 <td>{{ smartphone.isSold ? 'Yes' : 'No' }}</td>
                 <td>{{ smartphone.hasCharger ? 'Yes' : 'No' }}</td>
                 <td>{{ smartphone.createdAt ? smartphone.createdAt|date('Y-m-d H:i:s') : '' }}</td>
