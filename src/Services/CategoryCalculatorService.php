@@ -8,6 +8,7 @@ use App\Entity\Storage;
 use App\Repository\CategoryRepository;
 use App\Repository\SmartphoneRepository;
 use App\Repository\YearRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\Persistence\ObjectManager;
 
 class CategoryCalculatorService
@@ -22,6 +23,7 @@ class CategoryCalculatorService
         APIServices $apiServices,
         YearRepository $phoneAge,
         CategoryRepository $categoryRepository,
+        EntityManagerInterface $manager
     )
     {
         $this->smartphoneRepository = $smartphoneRepository;
@@ -31,11 +33,14 @@ class CategoryCalculatorService
         $this->storage = new Storage();
         $this->age = new PhoneAge();
         $this->categoryRepository = $categoryRepository;
+        $this->manager = $manager;
     }
 
     public function calculateCategory($id)
     {
         $smartphones = $this->smartphoneRepository->findBy(['id' => $id]);
+
+        $category = $this->categoryRepository->findAll();
 
         $year = $smartphones[0]->getReleaseDate();
         $year = $year->format('Y');
@@ -52,16 +57,12 @@ class CategoryCalculatorService
 
         $totalValue = $valueStorage + $valueRam + $valueAge;
 
-//        foreach ($category as $key => $value) {
-//            if ($totalValue >= $value->getIndiceMin() && $totalValue <= $value->getIndiceMax()) {
-//                $smartphones[0]->setCategory($value);
-//                $this->manager->persist($smartphones[0]);
-//                $this->manager->flush();
-//            }
-//        }
-
-
-
-        return $totalValue;
+        foreach ($category as $key => $value) {
+            if ($totalValue >= $value->getIndiceMin() && $totalValue <= $value->getIndiceMax()) {
+                $smartphones[0]->setCategory($value);
+                $this->manager->persist($smartphones[0]);
+                $this->manager->flush();
+            }
+        }
     }
 }
