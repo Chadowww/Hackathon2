@@ -3,32 +3,35 @@
 {% block title %}Smartphone index{% endblock %}
 
 {% block body %}
-    <h1>Smartphone index</h1>
-
+    <h1>Liste des Smartphones</h1>
     <table class="table">
         <thead>
-            <tr>
-                <th>Id</th>
-                <th>Model</th>
-                <th>IsSold</th>
-                <th>HasCharger</th>
-                <th>CreatedAt</th>
-                <th>UpdatedAt</th>
-                <th>actions</th>
-            </tr>
+        <tr>
+            <th>Id</th>
+            <th>Modèle</th>
+            <th>Catégorie</th>
+            <th>Vendu</th>
+            <th>Avec chargeur</th>
+            <th>Stockage</th>
+            <th>Mémoire</th>
+            <th>Prix</th>
+            <th>Actions</th>
+        </tr>
         </thead>
         <tbody>
+
         {% for smartphone in smartphones %}
             <tr>
                 <td>{{ smartphone.id }}</td>
                 <td>{{ smartphone.model}}</td>
-                <td>{{ smartphone.isSold ? 'Yes' : 'No' }}</td>
-                <td>{{ smartphone.hasCharger ? 'Yes' : 'No' }}</td>
-                <td>{{ smartphone.createdAt ? smartphone.createdAt|date('Y-m-d H:i:s') : '' }}</td>
-                <td>{{ smartphone.updatedAt ? smartphone.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ smartphone.category.categoryCode}}</td>
+                <td>{{ smartphone.isSold ? 'Oui' : 'Non' }}</td>
+                <td>{{ smartphone.hasCharger ? 'Oui' : 'Non' }}</td>
+                <td>{{ smartphone.storage.goStorage}}</td>
+                <td>{{ smartphone.memory}}</td>
+                <td>{{ smartphone.category.price}}&nbsp;Euros</td>
                 <td>
-                    <a href="{{ path('app_smartphone_show', {'id': smartphone.id}) }}">show</a>
-                    <a href="{{ path('app_smartphone_edit', {'id': smartphone.id}) }}">edit</a>
+                    <a href="{{ path('app_smartphone_show', {'id': smartphone.id}) }}">Voir</a>
                 </td>
             </tr>
         {% else %}
@@ -36,8 +39,9 @@
                 <td colspan="7">no records found</td>
             </tr>
         {% endfor %}
+
         </tbody>
     </table>
+    <a href="{{ path('app_smartphone_new') }}"><button class="ec-btn mt-5 w-25">{{ button_label|default('Ajouter') }}</button></a>
 
-    <a href="{{ path('app_smartphone_new') }}">Create new</a>
 {% endblock %}
