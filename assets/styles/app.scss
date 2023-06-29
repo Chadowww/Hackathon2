@@ -2,6 +2,23 @@
 @import "_includes/variables";
 @import "_includes/inputs";
 @import "_includes/buttons";
-body {
-    background-color: lightgray;
+@import "_includes/show_smartphone";
+@import "modules/navbar";
+@import "_includes/login";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
 }
+a{
+    text-decoration: none;
+}
+body{
+    background-image: url("../images/logo-emause.png");
+    background-repeat: no-repeat;
+    background-position: 135% -72%;
+    background-size: 60%;
+}
+

@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Smartphone;
 use App\Form\SmartphoneType;
 use App\Repository\SmartphoneRepository;
+use App\Services\APIServices;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -41,10 +42,13 @@ class SmartphoneController extends AbstractController
     }
 
     #[Route('/{id}', name: 'app_smartphone_show', methods: ['GET'])]
-    public function show(Smartphone $smartphone): Response
+    public function show(Smartphone $smartphone, APIServices $APIServices): Response
     {
+        $id = 'hello';
+        $details = $APIServices->getDetailsProduct($id);
         return $this->render('smartphone/show.html.twig', [
             'smartphone' => $smartphone,
+            'details' => $details,
         ]);
     }
 
