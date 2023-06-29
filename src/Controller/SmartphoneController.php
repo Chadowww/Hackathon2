@@ -6,6 +6,7 @@ use App\Entity\Smartphone;
 use App\Form\SmartphoneType;
 use App\Repository\SmartphoneRepository;
 use App\Services\APIServices;
+use App\Services\CategoryCalculatorService;
 use DateTimeImmutable;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -24,7 +25,11 @@ class SmartphoneController extends AbstractController
     }
 
     #[Route('/new', name: 'app_smartphone_new', methods: ['GET', 'POST'])]
-    public function new(Request $request, SmartphoneRepository $smartphoneRepository, APIServices $APIServices): Response
+    public function new(
+        Request $request,
+        SmartphoneRepository $smartphoneRepository,
+        APIServices $APIServices,
+        CategoryCalculatorService $categoryCalculatorService): Response
     {
         $smartphone = new Smartphone();
         $form = $this->createForm(SmartphoneType::class, $smartphone);
@@ -56,6 +61,7 @@ class SmartphoneController extends AbstractController
             $smartphoneRepository->save($smartphone, true);
 
             $id = $smartphone->getId();
+            $categoryCalculatorService->calculateCategory($id);
 
             return $this->redirectToRoute('app_smartphone_show', [
                 'id' => $id,

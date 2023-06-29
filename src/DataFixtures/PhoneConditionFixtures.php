@@ -35,6 +35,7 @@ class PhoneConditionFixtures extends Fixture
             $phoneConditionForFixture ->setPriceDepreciation($phoneCondition ['price_depreciation']);
             $phoneConditionForFixture ->setCreatedAt(new \DateTime());
             $phoneConditionForFixture ->setUpdatedAt(new \DateTime());
+            $this->setReference('phone_condition_' . $phoneCondition['overall_condition'], $phoneConditionForFixture);
 
             $manager->persist($phoneConditionForFixture);
         }
