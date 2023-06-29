@@ -1,6 +1,6 @@
 <!-- Vertical navbar -->
 <div class="vertical-nav" id="sidebar">
-    <div class="py-4 px-3" id="ec-bloc-img-plus">
+    <div class="py-4 px-3">
         <div class="media d-flex justify-content-center">
             <img src="{{ asset('/build/images/logo-emause.35e7cdeb.png') }}" alt="" id="ec-img-nav" >
         </div>
@@ -9,18 +9,18 @@
                 Bienvenue <br>{{ app.user.firstName }}
         </div>
         {% endif %}
+    </div>
+
+    <ul class="nav my-5 sm-mb_3" id="ec-li-nav">
         <ul class="nav" id="ec-nav-link-new">
             <li class="nav-item">
                 <a href="#" class="nav-link text-light font-italic"> <i class="fa-solid fa-plus text-light fa-fw"></i>
                     Nouvelle entrée </a>
             </li>
         </ul>
-    </div>
-
-    <ul class="nav mb-5 sm-mb_3" id="ec-li-nav">
         <li class="nav-item">
             <a href="#" class="nav-link text-light font-italic"> <i
-                        class="fa-solid fa-question text-light fa-fw"></i> Faq </a>
+                        class="fa-solid fa-question text-light fa-fw"></i> FAQ</a>
         </li>
         {% if app.user %}
             {% if is_granted("ROLE_ADMIN") and app.user %}
