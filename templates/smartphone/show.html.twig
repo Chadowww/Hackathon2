@@ -3,60 +3,58 @@
 {% block title %}Smartphone{% endblock %}
 
 {% block body %}
-{#	{{ dump(details.data.items[0]) }}#}
-<section class="ce-main-container w-75 m-auto">
-	<div class="ec-container-characteristic container d-flex w-75">
-		<div class="ec-img-phone d-flex justify-content-center">
-			<img src="{{ details.data.items[0].image.front }}" alt="">
-		</div>
-		<div class="ec-caracteristics-phone d-flex flex-column justify-content-center ">
-			<h1>{{ details.data.items[0].product.model }} </h1>
-			<h2>Model-number : <span class="font-weight-light">TODO</span></h2>
-			<h2>Système d'exploitation : <span class="font-weight-light">{{ details.data.items[0].key_aspects.os}}</span></h2>
-			<h2>RAM : <span class="font-weight-light">{{ details.data.items[0].key_aspects.ram}}</span></h2>
-			<h2>Capacité de stockage : <span class="font-weight-light">{{ details.data.items[0].key_aspects.storage}}</span></h2>
-			<div class="ec-bottom-card d-flex justify-content-around my-5">
-				<div class="ec-primary-button">ETAT :TODO</div>
-				<div class="ec-primary-button">CABLE DE CHARGE:TODO</div>
-			</div>
-		</div>
-	</div>
+    {#    {{ dump(details.data.items[0]) }} #}
+    <section class="ce-main-container-show m-auto p-3">
+        <div class="d-flex justify-content-center">
+        <h1 class="mb-3 mt-3">{{ details.data.items[0].product.model }}</h1>
+        </div>
+        <div class="d-flex em-media-screen">
+            <div class="d-flex align-items-start">
+                <img class="ec-img-phone" src="{{ details.data.items[0].image.front }}" alt="">
+            </div>
+            <div class="d-flex flex-column justify-content-center ">
+                <div class="d-flex"><h5>Modèle :</h5>
+                    <p class="ms-3">{{ smartphone.model }}</p>
+                </div>
 
-	<div class="ec-parent-grid w-50 m-auto">
-		<div class="ec-circle-category">
-			<div class="ec-circle-content-top d-flex justify-content-evenly flex-column align-items-center">
-				<h3>Catégorie</h3>
-				<h5 class="display-2">TODO</h5>
-			</div>
-		</div>
-		<div class="ec-left-circle flex-column">
-				<div class="ec-circle-content  d-flex flex-column justify-content-center align-items-center">
-					<h5>
-						{{ details.data.items[0].key_aspects.release_date}}
-					</h5>
-			</div>
-			<p class="ce-title-circle">sortie</p>
+                <div class="d-flex">
+                    <h5>Système d'exploitation : </h5>
+                    <p class="ms-3">{{ details.data.items[0].key_aspects.os }}</p>
+                </div>
 
-		</div>
-		<div class="ec-right-circle flex-column">
-			<div class="ec-circle-content d-flex flex-column justify-content-center align-items-center">
-				<h5>
-					23 TODO
-				</h5>
-			</div>
-			<p class="ce-title-circle">RAM</p>
-		</div>
-		<div class="ec-bottom-circle flex-column">
-			<div class="ec-circle-content d-flex flex-column justify-content-center align-items-center">
-				<h5>
-					23 TODO
-				</h5>
-			</div>
-			<p class="ce-title-cirle">stockage</p>
-		</div>
-	</div>
-	<a href="" class="d-flex justify-content-center"><button class="ec-secondary-button m-auto display-5 p-3">Enregistrer un nouvel	appareil</button></a>
-</section>
+                <div class="d-flex">
+                    <h5>Mémoire RAM : </h5>
+                    <p class="ms-3">{{ smartphone.memory }}</p>
+                </div>
+
+                <div class="d-flex">
+                    <h5>Capacité de stockage : </h5>
+                    <p class="ms-3">{{ smartphone.storage.goStorage }}</p>
+                </div>
+
+                <div class="d-flex">
+                    <h5>Date de sortie : </h5>
+                    <p class="ms-3">TO DO</p>
+                </div>
+
+                <div class="d-flex">
+                    <h5>Condition : </h5>
+                    <p class="ms-3">{{ smartphone.phoneCondition.overallCondition }}</p>
+                </div>
+
+                <div class="d-flex">
+                    <h5>Catégorie</h5>
+                    <p class="ms-3">TODO</p>
+                </div>
+
+                <div class="d-flex">
+                    <h5>Prix</h5>
+                    <p class="ms-3">TODO Euros</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
 {% endblock %}
