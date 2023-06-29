@@ -47,20 +47,23 @@ class StorageFixtures extends Fixture
             'value_storage' => 100,
         ],
         [
-            'go_storage' => 1000,
+            'go_storage' => 1024,
             'value_storage' => 120,
         ]
     ];
 
     public function load(ObjectManager $manager)
     {
+        $i = 1;
         foreach (self::STORAGEVALUES as $storage) {
             $storageForFixture = new Storage();
             $storageForFixture ->setGoStorage($storage ['go_storage']);
             $storageForFixture ->setValueStorage($storage ['value_storage']);
             $storageForFixture ->setCreatedAt(new \DateTime());
             $storageForFixture ->setUpdatedAt(new \DateTime());
+            $this->addReference('storage_' . $i, $storageForFixture);
 
+            $i++;
             $manager->persist($storageForFixture);
         }
         $manager->flush();
