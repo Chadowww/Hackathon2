@@ -3,7 +3,7 @@
 {% block title %}Smartphone{% endblock %}
 
 {% block body %}
-    {#    {{ dump(details.data.items[0]) }} #}
+{#        {{ dump() }}#}
     <section class="ce-main-container-show m-auto p-3">
         <div class="d-flex justify-content-center">
         <h1 class="mb-3 mt-3">{{ details.data.items[0].product.model }}</h1>
@@ -44,12 +44,12 @@
 
                 <div class="d-flex">
                     <h5>Catégorie</h5>
-                    <p class="ms-3">TODO</p>
+                    <p class="ms-3">{{ smartphone.category.categoryCode }}</p>
                 </div>
 
                 <div class="d-flex">
                     <h5>Prix</h5>
-                    <p class="ms-3">TODO Euros</p>
+                    <p class="ms-3">{{ smartphone.category.price }} Euros</p>
                 </div>
 
             </div>

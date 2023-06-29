@@ -20,6 +20,9 @@ a{
     background-image: url("../images/LogoEmmausConnect.png");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 70%;
+    background-size: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
