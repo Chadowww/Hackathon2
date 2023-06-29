@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+   <div class=" ce-container-login container d-flex flex-column justify-content-center align-items-center">
+       {% for flash_error in app.flashes('verify_email_error') %}
+           <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+       {% endfor %}
+
+       <h1>Register</h1>
+
+       {{ form_errors(registrationForm) }}
+
+       {{ form_start(registrationForm,{'label_attr': {'class': 'sr-only'}},{'attr': {'class': 'ce-form-login p-4 w-25
+        d-flex justify-content-center flex-column '}}) }}
+       {{ form_row(registrationForm.email,{'label_attr': {'class':'sr-only'},
+           'attr':{'class':'ema-input-main p-2 my-4','placeholder' : 'Saisissez votre mot de passe'}}
+       ) }}
+       {{ form_row(registrationForm.plainPassword,{'label_attr': {'class':'sr-only'},
+           'attr':{'class':'ema-input-main p-2 ','placeholder' : 'Saisissez votre mot de passe'}}
+           ) }}
+       {{ form_row(registrationForm.agreeTerms) }}
+
+       <button type="submit" class="ec-btn">Register</button>
+       {{ form_end(registrationForm) }}
+   </div>
+{% endblock %}
