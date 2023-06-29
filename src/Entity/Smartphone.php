@@ -27,6 +27,12 @@ class Smartphone
     #[ORM\ManyToOne(inversedBy: 'smartphones')]
     private ?Category $category = null;
 
+    #[ORM\ManyToOne(inversedBy: 'smartphones')]
+    private ?Memory $memory = null;
+
+    #[ORM\ManyToOne(inversedBy: 'smartphones')]
+    private ?Storage $storage = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -76,6 +82,31 @@ class Smartphone
     public function setCategory(?Category $category): static
     {
         $this->category = $category;
+
+        return $this;
+    }
+
+
+    public function getMemory(): ?Memory
+    {
+        return $this->memory;
+    }
+
+    public function setMemory(?Memory $memory): static
+    {
+        $this->memory = $memory;
+
+        return $this;
+    }
+
+    public function getStorage(): ?Storage
+    {
+        return $this->storage;
+    }
+
+    public function setStorage(?Storage $storage): static
+    {
+        $this->storage = $storage;
 
         return $this;
     }

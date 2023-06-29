@@ -2,14 +2,15 @@
 
 namespace App\Entity;
 
-use App\Repository\MemoryRepository;
+use App\Repository\YearRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Timestampable\Traits\TimestampableEntity;
 
-#[ORM\Entity(repositoryClass: MemoryRepository::class)]
-class Memory
+#[ORM\Entity(repositoryClass: YearRepository::class)]
+class PhoneAge
 {
     use TimestampableEntity;
     #[ORM\Id]
@@ -18,12 +19,12 @@ class Memory
     private ?int $id = null;
 
     #[ORM\Column(nullable: true)]
-    private ?int $ramNumber = null;
+    private ?int $phoneAge = null;
 
     #[ORM\Column(nullable: true)]
-    private ?int $valueMemory = null;
+    private ?int $valueYear = null;
 
-    #[ORM\OneToMany(mappedBy: 'memory', targetEntity: Smartphone::class)]
+    #[ORM\OneToMany(mappedBy: 'year', targetEntity: Smartphone::class)]
     private Collection $smartphones;
 
     public function __construct()
@@ -36,26 +37,32 @@ class Memory
         return $this->id;
     }
 
-    public function getRamNumber(): ?int
+    /**
+     * @return int|null
+     */
+    public function getPhoneAge(): ?int
     {
-        return $this->ramNumber;
+        return $this->phoneAge;
     }
 
-    public function setRamNumber(?int $ramNumber): static
+    /**
+     * @param int|null $phoneAge
+     */
+    public function setPhoneAge(?int $phoneAge): void
     {
-        $this->ramNumber = $ramNumber;
-
-        return $this;
+        $this->phoneAge = $phoneAge;
     }
 
-    public function getValueMemory(): ?int
+
+
+    public function getvalueYear(): ?int
     {
-        return $this->valueMemory;
+        return $this->valueYear;
     }
 
-    public function setValueMemory(?int $valueM): static
+    public function setvalueYear(?int $valueYear): static
     {
-        $this->valueMemory = $valueM;
+        $this->valueYear = $valueYear;
 
         return $this;
     }
@@ -72,7 +79,7 @@ class Memory
     {
         if (!$this->smartphones->contains($smartphone)) {
             $this->smartphones->add($smartphone);
-            $smartphone->setMemory($this);
+            $smartphone->setYear($this);
         }
 
         return $this;
@@ -82,8 +89,8 @@ class Memory
     {
         if ($this->smartphones->removeElement($smartphone)) {
             // set the owning side to null (unless already changed)
-            if ($smartphone->getMemory() === $this) {
-                $smartphone->setMemory(null);
+            if ($smartphone->getYear() === $this) {
+                $smartphone->setYear(null);
             }
         }
 

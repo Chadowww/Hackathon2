@@ -2,11 +2,11 @@
 
 namespace App\DataFixtures;
 
-use App\Entity\Year;
+use App\Entity\PhoneAge;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 
-class YearFixtures extends Fixture
+class PhoneAgeFixtures extends Fixture
 {
     const YEARVALUES = [
         [
@@ -58,7 +58,7 @@ class YearFixtures extends Fixture
     public function load(ObjectManager $manager)
     {
         foreach (self::YEARVALUES as $year) {
-            $yearForFixture = new Year();
+            $yearForFixture = new PhoneAge();
             $yearForFixture ->setPhoneAge($year ['phone_age']);
             $yearForFixture ->setvalueYear($year ['value_year']);
             $yearForFixture ->setCreatedAt(new \DateTime());
