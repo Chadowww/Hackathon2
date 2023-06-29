@@ -126,4 +126,8 @@ class Smartphone
 
         return $this;
     }
+    public function __toString(): string
+    {
+        return $this->release_date->format('Y');
+    }
 }
