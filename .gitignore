@@ -7,6 +7,8 @@
 /var/
 /vendor/
 /migrations/
+composer.lock
+/composer.lock
 ###< symfony/framework-bundle ###
 
 ###> phpunit/phpunit ###
