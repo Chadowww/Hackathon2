@@ -2,26 +2,26 @@
 
 namespace App\Repository;
 
-use App\Entity\Year;
+use App\Entity\PhoneAge;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @extends ServiceEntityRepository<Year>
+ * @extends ServiceEntityRepository<PhoneAge>
  *
- * @method Year|null find($id, $lockMode = null, $lockVersion = null)
- * @method Year|null findOneBy(array $criteria, array $orderBy = null)
- * @method Year[]    findAll()
- * @method Year[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method PhoneAge|null find($id, $lockMode = null, $lockVersion = null)
+ * @method PhoneAge|null findOneBy(array $criteria, array $orderBy = null)
+ * @method PhoneAge[]    findAll()
+ * @method PhoneAge[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
 class YearRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Year::class);
+        parent::__construct($registry, PhoneAge::class);
     }
 
-    public function save(Year $entity, bool $flush = false): void
+    public function save(PhoneAge $entity, bool $flush = false): void
     {
         $this->getEntityManager()->persist($entity);
 
@@ -30,7 +30,7 @@ class YearRepository extends ServiceEntityRepository
         }
     }
 
-    public function remove(Year $entity, bool $flush = false): void
+    public function remove(PhoneAge $entity, bool $flush = false): void
     {
         $this->getEntityManager()->remove($entity);
 
