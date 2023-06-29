@@ -1,4 +1,26 @@
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="ec-primary-button">{{ button_label|default('Save') }}</button>
+
+{{ form_row(form.model,{'label_attr': {'class':'sr-only'},
+    'attr':{'class':'ema-input-main p-2 my-4 mb-3','placeholder' : 'Modèle du smartphone'}}) }}
+
+<div class="d-flex mb-3">
+    <span>
+        Chargeur fourni ?
+    </span>
+    <div class="ms-3">
+    {{ form_row(form.hasCharger, {'label_attr' : {'class':'sr-only'}}) }}
+    </div>
+</div>
+
+<div class="d-flex mb-3">
+    <span>
+        Capacité de stockage (en giga octets) ?
+    </span>
+    <div class="ms-3">
+    {{ form_row(form.storage, {'label_attr' : {'class':'sr-only'}}) }}
+</div>
+</div>
+
+
+    <button class="ec-btn">{{ button_label|default('Save') }}</button>
 {{ form_end(form) }}

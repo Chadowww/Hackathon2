@@ -30,6 +30,14 @@ class SmartphoneController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $smartphone->setmodel($form->get('model')->getData());
+            $smartphone->sethasCharger($form->get('hasCharger')->getData());
+            $smartphone->setstorage($form->get('storage')->getData());
+            $smartphone->setMemory($form->get('storage')->getData());
+            $smartphone->setCreatedAt(new \DateTime());
+            $smartphone->setUpdatedAt(new \DateTime());
+
+
             $smartphoneRepository->save($smartphone, true);
 
             return $this->redirectToRoute('app_smartphone_index', [], Response::HTTP_SEE_OTHER);

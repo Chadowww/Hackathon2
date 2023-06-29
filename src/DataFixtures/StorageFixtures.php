@@ -47,7 +47,7 @@ class StorageFixtures extends Fixture
             'value_storage' => 100,
         ],
         [
-            'go_storage' => 1000,
+            'go_storage' => 1024,
             'value_storage' => 120,
         ]
     ];
