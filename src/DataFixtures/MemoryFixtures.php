@@ -85,14 +85,17 @@ class MemoryFixtures extends Fixture
 
     public function load(ObjectManager $manager)
     {
+        $i = 1;
         foreach (self::MEMORYVALUES as $memory) {
             $memoryForFixture = new Memory();
             $memoryForFixture ->setRamNumber($memory ['ram_number']);
             $memoryForFixture ->setValueMemory($memory ['value_memory']);
             $memoryForFixture ->setCreatedAt(new \DateTime());
             $memoryForFixture ->setUpdatedAt(new \DateTime());
+            $this->addReference('memory_' . $i, $memoryForFixture);
 
             $manager->persist($memoryForFixture);
+            $i++;
         }
         $manager->flush();
     }
