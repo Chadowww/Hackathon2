@@ -1,10 +1,10 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Log in!{% endblock %}
+{% block title %}Log in !{% endblock %}
 
 {% block body %}
     <div class=" ce-container-login container d-flex justify-content-center align-items-center ">
-        <form method="post" class="ce-form-login p-4 w-25 m-auto d-flex justify-content-center flex-column ">
+        <form method="post" class="ce-form-login p-4 w-50 m-auto d-flex align-items-center flex-column ">
             {% if error %}
                 <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
             {% endif %}
