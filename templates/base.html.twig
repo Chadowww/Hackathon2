@@ -22,11 +22,15 @@
         {{ encore_entry_script_tags('app') }}
     {% endblock %}
 </head>
-
+<body>
+<main class="d-flex flex-row" style="width: 100vw">
+    <div style="width: 18vw">
         {% include ('_includes/_navbar.html.twig') %}
-
-        {% block body %}
-        {% endblock %}
+    </div>
+    <div style="width: 82vw">
+        {% block body %}{% endblock %}
+    </div>
+</main>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"

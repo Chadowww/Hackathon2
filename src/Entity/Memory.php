@@ -23,13 +23,6 @@ class Memory
     #[ORM\Column(nullable: true)]
     private ?int $valueMemory = null;
 
-    #[ORM\OneToMany(mappedBy: 'memory', targetEntity: Smartphone::class)]
-    private Collection $smartphones;
-
-    public function __construct()
-    {
-        $this->smartphones = new ArrayCollection();
-    }
 
     public function getId(): ?int
     {
@@ -60,33 +53,4 @@ class Memory
         return $this;
     }
 
-    /**
-     * @return Collection<int, Smartphone>
-     */
-    public function getSmartphones(): Collection
-    {
-        return $this->smartphones;
-    }
-
-    public function addSmartphone(Smartphone $smartphone): static
-    {
-        if (!$this->smartphones->contains($smartphone)) {
-            $this->smartphones->add($smartphone);
-            $smartphone->setMemory($this);
-        }
-
-        return $this;
-    }
-
-    public function removeSmartphone(Smartphone $smartphone): static
-    {
-        if ($this->smartphones->removeElement($smartphone)) {
-            // set the owning side to null (unless already changed)
-            if ($smartphone->getMemory() === $this) {
-                $smartphone->setMemory(null);
-            }
-        }
-
-        return $this;
-    }
 }
