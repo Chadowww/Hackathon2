@@ -23,8 +23,8 @@ class StorageCrudController extends AbstractCrudController
             IdField::new('id')
                 ->hideOnIndex()
                 ->hideOnForm(),
-            IntegerField::new('goStorage'),
-            IntegerField::new('valueStorage'),
+            IntegerField::new('goStorage', 'Stockage (en GO)'),
+            IntegerField::new('valueStorage', 'Valeur de stockage'),
         ];
     }
 
@@ -32,5 +32,16 @@ class StorageCrudController extends AbstractCrudController
     {
         return $actions
             ->add(Crud::PAGE_INDEX, Action::DETAIL);
+    }
+
+    public function configureCrud(Crud $crud): Crud
+    {
+        return $crud
+            ->showEntityActionsInlined()
+            ->setPageTitle('index', 'Tous les critères de stockage')
+            ->setPageTitle('new', 'Ajouter un nouveau critère de stockage')
+            ->setPageTitle('edit', 'Modifier le critère de stockage')
+            ->setPageTitle('detail', 'Détails')
+            ;
     }
 }

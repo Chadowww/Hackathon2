@@ -37,11 +37,11 @@ class UserCrudController extends AbstractCrudController
     {
         $fields = [
             IdField::new('id')->hideOnform(),
-            TextField::new('email'),
-            TextField::new('firstname'),
-            TextField::new('lastname'),
-            TextField::new('phoneNumber'),
-            ArrayField::new('roles'),
+            TextField::new('email', 'Adresse email'),
+            TextField::new('firstname', 'Prénom'),
+            TextField::new('lastname', 'Nom de famille'),
+            TextField::new('phoneNumber', 'Numéro de téléphone'),
+            ArrayField::new('roles', 'Rôles'),
             DateTimeField::new('createdAt')->onlyOnDetail(),
             DateTimeField::new('updatedAt')->onlyOnDetail(),
         ];
@@ -49,8 +49,8 @@ class UserCrudController extends AbstractCrudController
             ->setFormType(RepeatedType::class)
             ->setFormTypeOptions([
                 'type' => PasswordType::class,
-                'first_options' => ['label' => 'Password'],
-                'second_options' => ['label' => 'Repeat password'],
+                'first_options' => ['label' => 'Mot de passe'],
+                'second_options' => ['label' => 'Confirmer le mot de passe'],
                 'mapped' => false,
             ])
             ->setRequired($pageName === Crud::PAGE_NEW)
@@ -64,6 +64,17 @@ class UserCrudController extends AbstractCrudController
     {
         return $actions
             ->add(Crud::PAGE_INDEX, Action::DETAIL);
+    }
+
+    public function configureCrud(Crud $crud): Crud
+    {
+        return $crud
+            ->showEntityActionsInlined()
+            ->setPageTitle('index', 'Tous les bénévoles')
+            ->setPageTitle('new', 'Ajouter un nouveau bénévole')
+            ->setPageTitle('edit', 'Modifier les informations d\'un bénévole')
+            ->setPageTitle('detail', 'Détails')
+            ;
     }
 
     public function createNewFormBuilder(EntityDto $entityDto, KeyValueStore $formOptions, AdminContext $context): FormBuilderInterface

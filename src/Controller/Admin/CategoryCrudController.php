@@ -25,10 +25,10 @@ class CategoryCrudController extends AbstractCrudController
             IdField::new('id')
                 ->hideOnIndex()
                 ->hideOnForm(),
-            IntegerField::new('indiceMin'),
-            IntegerField::new('indiceMax'),
-            TextField::new('categoryCode'),
-            NumberField::new('price'),
+            IntegerField::new('indiceMin', 'Indice minimum'),
+            IntegerField::new('indiceMax', 'Indice maximum'),
+            TextField::new('categoryCode', 'Code'),
+            NumberField::new('price', 'Prix'),
         ];
     }
 
@@ -36,5 +36,16 @@ class CategoryCrudController extends AbstractCrudController
     {
         return $actions
             ->add(Crud::PAGE_INDEX, Action::DETAIL);
+    }
+
+    public function configureCrud(Crud $crud): Crud
+    {
+        return $crud
+            ->showEntityActionsInlined()
+            ->setPageTitle('index', 'Toutes les catégories')
+            ->setPageTitle('new', 'Ajouter une catégorie')
+            ->setPageTitle('edit', 'Modifier une catégorie')
+            ->setPageTitle('detail', 'Détails')
+            ;
     }
 }

@@ -24,10 +24,10 @@ class SmartphoneCrudController extends AbstractCrudController
         return [
             IdField::new('id')
                 ->hideOnForm(),
-            TextField::new('model'),
-            BooleanField::new('hasCharger'),
-            BooleanField::new('isSold'),
-            AssociationField::new('category')
+            TextField::new('model', 'Modèle'),
+            BooleanField::new('hasCharger', 'Chargeur'),
+            BooleanField::new('isSold', 'Vendu'),
+            AssociationField::new('category', 'Code')
         ];
     }
 
@@ -35,5 +35,16 @@ class SmartphoneCrudController extends AbstractCrudController
     {
         return $actions
             ->add(Crud::PAGE_INDEX, Action::DETAIL);
+    }
+
+    public function configureCrud(Crud $crud): Crud
+    {
+        return $crud
+            ->showEntityActionsInlined()
+            ->setPageTitle('index', 'Tous les smartphones')
+            ->setPageTitle('new', 'Ajouter un nouveau smartphone')
+            ->setPageTitle('edit', 'Modifier le smartphone')
+            ->setPageTitle('detail', 'Détails')
+            ;
     }
 }

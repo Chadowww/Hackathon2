@@ -23,8 +23,8 @@ class MemoryCrudController extends AbstractCrudController
             IdField::new('id')
                 ->hideOnForm()
                 ->hideOnIndex(),
-            IntegerField::new('ramNumber'),
-            IntegerField::new('valueMemory'),
+            IntegerField::new('ramNumber', 'RAM'),
+            IntegerField::new('valueMemory', 'Valeur de mémoire'),
         ];
     }
 
@@ -32,5 +32,16 @@ class MemoryCrudController extends AbstractCrudController
     {
         return $actions
             ->add(Crud::PAGE_INDEX, Action::DETAIL);
+    }
+
+    public function configureCrud(Crud $crud): Crud
+    {
+        return $crud
+            ->showEntityActionsInlined()
+            ->setPageTitle('index', 'Tous les critères de mémoire')
+            ->setPageTitle('new', 'Ajouter un nouveau critère de mémoire')
+            ->setPageTitle('edit', 'Modifier le critère de mémoire')
+            ->setPageTitle('detail', 'Détails')
+            ;
     }
 }
