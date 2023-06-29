@@ -17,7 +17,7 @@
         </ul>
     </div>
 
-    <ul class="nav " id="ec-li-nav">
+    <ul class="nav lg-mb-5 sm-mb_3" id="ec-li-nav">
         <li class="nav-item">
             <a href="#" class="nav-link text-light font-italic"> <i
                         class="fa-solid fa-question text-light fa-fw"></i> Faq </a>
@@ -25,15 +25,18 @@
         {% if app.user %}
             {% if is_granted("ROLE_ADMIN") and app.user %}
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-light font-italic"> <i
-                                class="fa-solid fa-gear text-light fa-fw"></i> Administration </a>
+                    <a href="#" class="nav-link text-light font-italic">
+                        <i class="fa-solid fa-gear text-light fa-fw"></i> Administration </a>
                 </li>
             {% endif %}
-
+            <li class="nav-item">
+                <a href="#" class="nav-link text-light font-italic">
+                    <i class="fa-solid fa-right-from-bracket text-light fa-fw"></i> Déconnexion </a>
+            </li>
         {% endif %}
         <li class="nav-item">
-            <a href="#" class="nav-link text-light font-italic"> <i
-                        class="fa-solid fa-right-from-bracket text-light fa-fw"></i> Déconnexion </a>
+            <a href="#" class="nav-link text-light font-italic">
+                <i class="fa-solid fa-right-to-bracket text-light fa-fw"></i>Connexion</a>
         </li>
     </ul>
 </div><!-- End vertical navbar -->
