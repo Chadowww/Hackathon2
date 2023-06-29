@@ -6,6 +6,7 @@ use App\Entity\Smartphone;
 use App\Form\SmartphoneType;
 use App\Repository\SmartphoneRepository;
 use App\Services\APIServices;
+use DateTimeImmutable;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -33,24 +34,33 @@ class SmartphoneController extends AbstractController
             $apiServices = new APIServices();
             $resultRequest = $apiServices->getIdProduct($form->get('model')->getData());
 
-            $id= $resultRequest['data']['items'][0]['product']['id'];
-            $phone= $apiServices->getDetailsProduct($id);
+            $idAPI= $resultRequest['data']['items'][0]['product']['id'];
+            $phone= $apiServices->getDetailsProduct($idAPI);
 
             $memory = $phone['data']['items'][0]['key_aspects']['ram'];
+            $numericValue = intval(preg_replace('/[^0-9]/', '', $memory));
             $releaseDate = $phone['data']['items'][0]['date']['released'];
+            $date = DateTimeImmutable::createFromFormat('Y-m-d', $releaseDate);
 
             $smartphone->setmodel($form->get('model')->getData());
             $smartphone->sethasCharger($form->get('hasCharger')->getData());
             $smartphone->setstorage($form->get('storage')->getData());
-            $smartphone->setMemory($memory);
-            $smartphone->setReleaseDate($releaseDate);
+            $smartphone->setMemory($numericValue);
+            $smartphone->setReleaseDate($date);
+            $smartphone->setPhoneCondition($form->get('phoneCondition')->getData());
+            $smartphone->setIsSold(0);
             $smartphone->setCreatedAt(new \DateTime());
             $smartphone->setUpdatedAt(new \DateTime());
 
 
             $smartphoneRepository->save($smartphone, true);
 
-            return $this->redirectToRoute('app_smartphone_index', [], Response::HTTP_SEE_OTHER);
+            $id = $smartphone->getId();
+
+            return $this->redirectToRoute('app_smartphone_show', [
+                'id' => $id,
+                'smartphone' => $smartphone,
+            ], Response::HTTP_SEE_OTHER);
         }
 
         return $this->renderForm('smartphone/new.html.twig', [

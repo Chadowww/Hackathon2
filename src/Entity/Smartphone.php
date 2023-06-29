@@ -28,8 +28,8 @@ class Smartphone
     #[ORM\ManyToOne(inversedBy: 'smartphones')]
     private ?Category $category = null;
 
-    #[ORM\ManyToOne(inversedBy: 'smartphones')]
-    private ?Memory $memory = null;
+    #[ORM\Column(nullable: true)]
+    private ?int $memory = null;
 
     #[ORM\ManyToOne(inversedBy: 'smartphones')]
     private ?Storage $storage = null;
@@ -68,6 +68,17 @@ class Smartphone
 
         return $this;
     }
+    public function getMemory(): ?int
+    {
+        return $this->memory;
+    }
+
+    public function setMemory(?int $memory): static
+    {
+        $this->memory = $memory;
+
+        return $this;
+    }
 
     public function isHasCharger(): ?bool
     {
@@ -94,17 +105,6 @@ class Smartphone
     }
 
 
-    public function getMemory(): ?Memory
-    {
-        return $this->memory;
-    }
-
-    public function setMemory(?Memory $memory): static
-    {
-        $this->memory = $memory;
-
-        return $this;
-    }
 
     public function getStorage(): ?Storage
     {
