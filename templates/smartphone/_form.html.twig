@@ -8,7 +8,7 @@
         Chargeur fourni ?
     </span>
     <div class="ms-3">
-    {{ form_row(form.hasCharger, {'label_attr' : {'class':'sr-only'}}) }}
+        {{ form_row(form.hasCharger, {'label_attr' : {'class':'sr-only'}}) }}
     </div>
 </div>
 
@@ -17,10 +17,19 @@
         Capacité de stockage (en giga octets) ?
     </span>
     <div class="ms-3">
-    {{ form_row(form.storage, {'label_attr' : {'class':'sr-only'}}) }}
+        {{ form_row(form.storage, {'label_attr' : {'class':'sr-only'}}) }}
+    </div>
 </div>
+
+<div class="d-flex mb-3">
+    <span>
+        Etat général du téléphone ?
+    </span>
+    <div class="ms-3">
+        {{ form_row(form.phoneCondition, {'label_attr' : {'class':'sr-only'}}) }}
+    </div>
 </div>
 
 
-    <button class="ec-btn">{{ button_label|default('Save') }}</button>
+<button class="ec-btn">{{ button_label|default('Ajouter') }}</button>
 {{ form_end(form) }}

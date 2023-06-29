@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\PhoneConditionRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Timestampable\Traits\TimestampableEntity;
 
@@ -20,6 +22,14 @@ class PhoneCondition
 
     #[ORM\Column(nullable: true)]
     private ?float $priceDepreciation = null;
+
+    #[ORM\OneToMany(mappedBy: 'phoneCondition', targetEntity: Smartphone::class)]
+    private Collection $smartphones;
+
+    public function __construct()
+    {
+        $this->smartphones = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -46,6 +56,36 @@ class PhoneCondition
     public function setPriceDepreciation(?float $priceDepreciation): static
     {
         $this->priceDepreciation = $priceDepreciation;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Smartphone>
+     */
+    public function getSmartphones(): Collection
+    {
+        return $this->smartphones;
+    }
+
+    public function addSmartphone(Smartphone $smartphone): static
+    {
+        if (!$this->smartphones->contains($smartphone)) {
+            $this->smartphones->add($smartphone);
+            $smartphone->setPhoneCondition($this);
+        }
+
+        return $this;
+    }
+
+    public function removeSmartphone(Smartphone $smartphone): static
+    {
+        if ($this->smartphones->removeElement($smartphone)) {
+            // set the owning side to null (unless already changed)
+            if ($smartphone->getPhoneCondition() === $this) {
+                $smartphone->setPhoneCondition(null);
+            }
+        }
 
         return $this;
     }

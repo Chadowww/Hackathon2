@@ -2,6 +2,7 @@
 
 namespace App\Form;
 
+use App\Entity\PhoneCondition;
 use App\Entity\Smartphone;
 use App\Entity\Storage;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
@@ -16,7 +17,13 @@ class SmartphoneType extends AbstractType
         $builder
             ->add('model')
             ->add('hasCharger')
-            ->add('storage')
+            ->add('phoneCondition', EntityType::class, [
+                'class' => PhoneCondition::class,
+                'choice_label' => 'overall_condition',
+                'multiple' => false,
+                'expanded' => false,
+                'by_reference' => false,
+            ])
             ->add('storage', EntityType::class, [
                 'class' => Storage::class,
                 'choice_label' => 'go_storage',

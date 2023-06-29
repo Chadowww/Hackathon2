@@ -37,6 +37,9 @@ class Smartphone
     #[ORM\Column(type: Types::DATE_MUTABLE, nullable: true)]
     private ?\DateTimeInterface $release_date = null;
 
+    #[ORM\ManyToOne(inversedBy: 'smartphones')]
+    private ?PhoneCondition $phoneCondition = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -129,5 +132,17 @@ class Smartphone
     public function __toString(): string
     {
         return $this->release_date->format('Y');
+    }
+
+    public function getPhoneCondition(): ?PhoneCondition
+    {
+        return $this->phoneCondition;
+    }
+
+    public function setPhoneCondition(?PhoneCondition $phoneCondition): static
+    {
+        $this->phoneCondition = $phoneCondition;
+
+        return $this;
     }
 }
