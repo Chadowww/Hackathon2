@@ -23,13 +23,31 @@ class SmartphoneController extends AbstractController
     }
 
     #[Route('/new', name: 'app_smartphone_new', methods: ['GET', 'POST'])]
-    public function new(Request $request, SmartphoneRepository $smartphoneRepository): Response
+    public function new(Request $request, SmartphoneRepository $smartphoneRepository, APIServices $APIServices): Response
     {
         $smartphone = new Smartphone();
         $form = $this->createForm(SmartphoneType::class, $smartphone);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $apiServices = new APIServices();
+            $resultRequest = $apiServices->getIdProduct($form->get('model')->getData());
+
+            $id= $resultRequest['data']['items'][0]['product']['id'];
+            $phone= $apiServices->getDetailsProduct($id);
+
+            $memory = $phone['data']['items'][0]['key_aspects']['ram'];
+            $releaseDate = $phone['data']['items'][0]['date']['released'];
+
+            $smartphone->setmodel($form->get('model')->getData());
+            $smartphone->sethasCharger($form->get('hasCharger')->getData());
+            $smartphone->setstorage($form->get('storage')->getData());
+            $smartphone->setMemory($memory);
+            $smartphone->setReleaseDate($releaseDate);
+            $smartphone->setCreatedAt(new \DateTime());
+            $smartphone->setUpdatedAt(new \DateTime());
+
+
             $smartphoneRepository->save($smartphone, true);
 
             return $this->redirectToRoute('app_smartphone_index', [], Response::HTTP_SEE_OTHER);
