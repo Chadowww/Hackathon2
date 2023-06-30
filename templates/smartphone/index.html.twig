@@ -3,39 +3,50 @@
 {% block title %}Smartphone index{% endblock %}
 
 {% block body %}
-<div style="width: 82vw; min-height: 80vh" id="ec-background">
+    <div class="d-flex justify-content-end w-100">
+        <div class="rounded w-25">
+            {{ form_start(form) }}
+            <div class="input-group">
+                {{ form_widget(form.search, {'attr': {'class': 'form-control border-0 rounded', 'placeholder': 'Rechercher', 'aria-label': 'Search'}}) }}
+                <div class="input-group-append">
+                    <button class="btn btn-light" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            {{ form_end(form) }}
+        </div>
+    </div>
 
-<h1 class="display-1 fw-bold">Smartphone index</h1>
-
-    <table class="table shadow-lg">
+    <h1>Liste des Smartphones</h1>
+    <table class="table">
         <thead>
-            <tr>
-                <th>Id</th>
-                <th>Model</th>
-                <th>IsSold</th>
-                <th>HasCharger</th>
-                <th >CreatedAt</th>
-                <th  >UpdatedAt</th>
-                <th>actions</th>
-            </tr>
+        <tr>
+            <th>Id</th>
+            <th>Modèle</th>
+            <th>Catégorie</th>
+            <th>Vendu</th>
+            <th>Avec chargeur</th>
+            <th>Stockage</th>
+            <th>Mémoire</th>
+            <th>Prix</th>
+            <th>Actions</th>
+        </tr>
         </thead>
         <tbody>
+
         {% for smartphone in smartphones %}
             <tr>
                 <td>{{ smartphone.id }}</td>
                 <td>{{ smartphone.model}}</td>
-                <td>{{ smartphone.isSold ? 'Yes' : 'No' }}</td>
-                <td>{{ smartphone.hasCharger ? 'Yes' : 'No' }}</td>
-                <td >{{ smartphone.createdAt ? smartphone.createdAt|date('Y-m-d
-                H:i:s') :
-                    '' }}</td>
-                <td >{{ smartphone.updatedAt ? smartphone.updatedAt|date('Y-m-d H:i:s') :
-                    '' }}</td>
+                <td>{{ smartphone.category.categoryCode}}</td>
+                <td>{{ smartphone.isSold ? 'Oui' : 'Non' }}</td>
+                <td>{{ smartphone.hasCharger ? 'Oui' : 'Non' }}</td>
+                <td>{{ smartphone.storage.goStorage}}</td>
+                <td>{{ smartphone.memory}}</td>
+                <td>{{ smartphone.category.price}}&nbsp;Euros</td>
                 <td>
-                    <a href="{{ path('app_smartphone_show', {'id': smartphone.id}) }}" class="ec-btn text-center w-25
-">Voir</a>
-                    <a href="{{ path('app_smartphone_edit', {'id': smartphone.id}) }}" class="ec-btn text-center w-25
-">Editer</a>
+                    <a href="{{ path('app_smartphone_show', {'id': smartphone.id}) }}">Voir</a>
                 </td>
             </tr>
         {% else %}
@@ -43,9 +54,8 @@
                 <td colspan="7">no records found</td>
             </tr>
         {% endfor %}
+
         </tbody>
     </table>
-
-    <a href="{{ path('app_smartphone_new') }}" class="ec-btn text-center w-25">Ajouter un nouveau mobile</a>
-</div>
+    <a href="{{ path('app_smartphone_new') }}"><button class="ec-btn mt-5 w-25">{{ button_label|default('Ajouter') }}</button></a>
 {% endblock %}

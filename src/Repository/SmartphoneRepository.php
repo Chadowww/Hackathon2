@@ -38,6 +38,15 @@ class SmartphoneRepository extends ServiceEntityRepository
             $this->getEntityManager()->flush();
         }
     }
+    public function findLikeModel(string $model)
+    {
+        $queryBuilder = $this->createQueryBuilder('s')
+            ->where('s.model LIKE :model')
+            ->setParameter('model', '%' . $model . '%')
+            ->orderBy('s.model', 'ASC')
+            ->getQuery();
+        return $queryBuilder->getResult();
+    }
 
 //    /**
 //     * @return Smartphone[] Returns an array of Smartphone objects

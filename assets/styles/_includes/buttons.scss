@@ -49,3 +49,20 @@
   background: #E62460;
   text-decoration: none;
 }
+
+.ec-btn2 {
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 50px;
+  color: #ffffff;
+  background: $primary-color;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 100%;
+  border: none;
+}
+
+.ec-btn2:hover {
+  background: $secondary-color;
+  text-decoration: none;
+}
