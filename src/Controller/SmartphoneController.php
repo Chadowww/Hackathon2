@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Smartphone;
+use App\Form\SearchSmartphoneType;
 use App\Form\SmartphoneType;
 use App\Repository\SmartphoneRepository;
 use App\Services\APIServices;
@@ -16,11 +17,20 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/smartphone')]
 class SmartphoneController extends AbstractController
 {
-    #[Route('/', name: 'app_smartphone_index', methods: ['GET'])]
-    public function index(SmartphoneRepository $smartphoneRepository): Response
+    #[Route('/', name: 'app_smartphone_index', methods: ['GET', 'POST'])]
+    public function index(Request $request, SmartphoneRepository $smartphoneRepository): Response
     {
+        $form = $this->createForm(SearchSmartphoneType::class);
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $search = $form->getData()['search'];
+            $smartphones = $smartphoneRepository->findLikeModel($search);
+        } else {
+            $smartphones = $smartphoneRepository->findAll();
+        }
         return $this->render('smartphone/index.html.twig', [
-            'smartphones' => $smartphoneRepository->findAll(),
+            'smartphones' => $smartphones,
+            'form' => $form,
         ]);
     }
 
@@ -41,6 +51,13 @@ class SmartphoneController extends AbstractController
 
             $idAPI= $resultRequest['data']['items'][0]['product']['id'];
             $phone= $apiServices->getDetailsProduct($idAPI);
+
+            $wireless = $phone['data']['items'][0]['key_aspects']['wireless_&_cellular'];
+            if(!preg_match("/\b(?:4G|5G|6G)\b/", $wireless))
+            {
+                $this->addFlash('error', 'Ce téléphone n\'est pas compatible nos critères de reprise');
+                return $this->redirectToRoute('app_smartphone_new');
+            }
 
             $memory = $phone['data']['items'][0]['key_aspects']['ram'];
             $numericValue = intval(preg_replace('/[^0-9]/', '', $memory));
