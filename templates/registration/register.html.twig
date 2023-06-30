@@ -3,7 +3,9 @@
 {% block title %}Register{% endblock %}
 
 {% block body %}
-    <div class=" ce-container-login container d-flex flex-column align-items-center">
+<div style="width: 82vw; min-height: 80vh" id="ec-background">
+
+<div class=" ce-container-login container d-flex flex-column align-items-center">
         <div class="ce-form-login p-4 w-50 m-auto d-flex justify-content-center flex-column align-items-center">
             {% for flash_error in app.flashes('verify_email_error') %}
                 <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
@@ -36,4 +38,5 @@
            
         </div>
     </div>
+</div>
 {% endblock %}

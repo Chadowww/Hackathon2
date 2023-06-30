@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <style>
+        .page-404{
+            background-color: #ffffff;
+        }
+
+        .bold{
+            font-weight: 600;
+        }
+        .title{
+            text-align: center;
+        }
+        .text-lg{
+            font-weight: 800;
+            font-size: 350px;
+        }
+        .night-king{
+            width: 400px;
+            height: 450px;
+            border-radius: 100%;
+            background-image: url('https://cdn.dribbble.com/users/750408/screenshots/3648247/2017-07-09-nightking.gif');
+            background-position: center top;
+        }
+        .button{
+            margin-top: 30px;
+            padding: 10px;
+            border: 3px solid #ffffff;
+            border-radius: 1000px;
+            color: #ffffff;
+            text-align: center;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <div class="m-auto">
+       <div class="row justify-content-center align-items-center">
+           <div class="col-auto">
+               <h1 class="text-lg">4</h1>
+           </div>
+           <div class="col-auto">
+               <div class="night-king">
+
+               </div>
+           </div>
+           <div class="col-auto">
+               <h1 class="text-lg">4</h1>
+           </div>
+       </div>
+       <div>
+           <h1 class="title" style="font-size: 24px;">You shouldn't be here. Unless you are the <strong>Three Eyed Raven</strong>.</h1>
+           <div class="row justify-content-center">
+               <a href="" class="title bold" style="text-align: center;">< Back to westeros</a>
+           </div>
+       </div>
+   </div>
+{% endblock %}

@@ -3,11 +3,14 @@
 {% block title %}Edit Smartphone{% endblock %}
 
 {% block body %}
-    <h1>Edit Smartphone</h1>
+<div style="width: 82vw; min-height: 80vh" id="ec-background">
+
+<h1>Edit Smartphone</h1>
 
     {{ include('smartphone/_form.html.twig', {'button_label': 'Update'}) }}
 
     <a href="{{ path('app_smartphone_index') }}">back to list</a>
 
     {{ include('smartphone/_delete_form.html.twig') }}
+</div>
 {% endblock %}

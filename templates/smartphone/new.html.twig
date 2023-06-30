@@ -3,6 +3,13 @@
 {% block title %}Nouveau Smartphone{% endblock %}
 
 {% block body %}
+<div style="width: 82vw; min-height: 80vh" id="ec-background">
+
+{% for message in app.flashes('warning') %}
+        <div class="alert alert-warning">
+            {{ message }}
+        </div>
+    {% endfor %}
     <div class="d-flex justify-content-center">
         <div class="d-flex flex-column justify-content-center align-items-center p-5 ce-form-smartphone">
     <h1>Ajouter un smartphone</h1>
@@ -10,4 +17,5 @@
     {{ include('smartphone/_form.html.twig') }}
     </div>
     </div>
+</div>
 {% endblock %}
