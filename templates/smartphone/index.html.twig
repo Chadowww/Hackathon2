@@ -3,6 +3,21 @@
 {% block title %}Smartphone index{% endblock %}
 
 {% block body %}
+    <div class="d-flex justify-content-end w-100">
+        <div class="rounded w-25">
+            {{ form_start(form) }}
+            <div class="input-group">
+                {{ form_widget(form.search, {'attr': {'class': 'form-control border-0 rounded', 'placeholder': 'Rechercher', 'aria-label': 'Search'}}) }}
+                <div class="input-group-append">
+                    <button class="btn btn-light" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            {{ form_end(form) }}
+        </div>
+    </div>
+
     <h1>Liste des Smartphones</h1>
     <table class="table">
         <thead>
