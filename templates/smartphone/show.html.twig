@@ -3,21 +3,22 @@
 {% block title %}Smartphone{% endblock %}
 
 {% block body %}
-<div style="width: 82vw; min-height: 80vh" id="ec-background">
 
-{% for message in app.flashes('success') %}
+    {% for message in app.flashes('success') %}
         <div class="alert alert-success">
             {{ message }}
         </div>
     {% endfor %}
-    <section class="ce-main-container-show m-auto p-3">
+
+    <section class="ce-main-container-show p-3 w-100">
         <div class="d-flex justify-content-center">
-        <h1 class="mb-3 mt-3">{{ details.data.items[0].product.model }}</h1>
+            <h1 class="mb-3 mt-3">{{ details.data.items[0].product.model }}</h1>
         </div>
         <div class="d-flex em-media-screen">
             <div class="d-flex align-items-start">
                 <img class="ec-img-phone" src="{{ details.data.items[0].image.front }}" alt="">
             </div>
+
             <div class="d-flex flex-column justify-content-center ">
                 <div class="d-flex"><h5>Modèle :</h5>
                     <p class="ms-3">{{ smartphone.model }}</p>
@@ -60,11 +61,17 @@
 
             </div>
         </div>
+
+        <div class="d-flex justify-content-between w-100">
+            <a href="{{ path('app_smartphone_index') }}" class="w-25 mt-4 mb-2">
+                <button class="ec-btn2 mt-3">{{ button_label|default('Retour à la liste') }}</button>
+            </a>
+            <a href="{{ path('app_smartphone_new') }}" class="w-25 mt-4 mb-2">
+                <button class="ec-btn mt-3">{{ button_label|default('Ajouter un smartphone') }}</button>
+            </a>
+        </div>
     </section>
-    <div class="d-flex-inline w-100 justify-content-between">
-    <a href="{{ path('app_smartphone_index') }}"><button class="ec-btn2 mt-4 w-25">{{ button_label|default('Retour à la liste') }}</button></a>
-    <a href="{{ path('app_smartphone_new') }}"><button class="ec-btn mt-3 w-25">{{ button_label|default('Ajouter un smartphone') }}</button></a>
-    </div>
+
 
 {% endblock %}
 
