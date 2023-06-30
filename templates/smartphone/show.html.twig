@@ -61,9 +61,10 @@
             </div>
         </div>
     </section>
-    <div>
-    <a href="{{ path('app_smartphone_index') }}"><button class="ec-btn2 mt-4 w-25">{{ button_label|default('Retour à la liste') }}</button></a></div>
-    <div>
+    <div class="d-flex-inline w-100 justify-content-between">
+    <a href="{{ path('app_smartphone_index') }}"><button class="ec-btn2 mt-4 w-25">{{ button_label|default('Retour à la liste') }}</button></a>
     <a href="{{ path('app_smartphone_new') }}"><button class="ec-btn mt-3 w-25">{{ button_label|default('Ajouter un smartphone') }}</button></a>
     </div>
+
 {% endblock %}
+

@@ -13,6 +13,8 @@
 
     <ul class="nav my-5 sm-mb_3" id="ec-li-nav">
         <ul class="nav d-flex flex-column" id="ec-nav-link-new">
+        
+            {% if app.user %}
 
             {% if is_granted('IS_AUTHENTICATED_FULLY') %}
                 <li class="nav-item">
@@ -27,6 +29,7 @@
                 <a href="{# {{ path('app_faq') }} #}" class="nav-link text-light font-italic"><i
                             class="fa-solid fa-question text-light fa-fw"></i>&nbsp;&nbsp;FAQ</a>
             </li>
+            {% endif %}
         </ul>
         {% if app.user %}
             {% if is_granted("ROLE_ADMIN") and app.user %}
