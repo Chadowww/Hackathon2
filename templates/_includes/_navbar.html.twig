@@ -13,6 +13,7 @@
 
     <ul class="nav my-5 sm-mb_3" id="ec-li-nav">
         <ul class="nav d-flex flex-column" id="ec-nav-link-new">
+            {% if app.user %}
             <li class="nav-item">
                 <a href="{{ path('app_smartphone_new') }}" class="nav-link text-light font-italic"> <i class="fa-solid fa-plus text-light fa-fw"></i>&nbsp;&nbsp;Nouvelle entrée </a>
             </li>
@@ -23,6 +24,7 @@
                 <a href="#" class="nav-link text-light font-italic"><i
                             class="fa-solid fa-question text-light fa-fw"></i>&nbsp;&nbsp;FAQ</a>
             </li>
+            {% endif %}
         </ul>
         {% if app.user %}
             {% if is_granted("ROLE_ADMIN") and app.user %}
