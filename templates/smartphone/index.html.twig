@@ -3,7 +3,8 @@
 {% block title %}Smartphone index{% endblock %}
 
 {% block body %}
-    <div class="d-flex justify-content-end w-100">
+    <section class="d-flex flex-column ce-main-container-index">
+    <div class="d-flex justify-content-end mt-2">
         <div class="rounded w-25">
             {{ form_start(form) }}
             <div class="input-group">
@@ -18,7 +19,7 @@
         </div>
     </div>
 
-    <h1 class="mb-4 text-center">Liste des Smartphones</h1>
+    <h1 class="mb-4 mt-3">Liste des Smartphones</h1>
     <table class="table">
         <thead>
         <tr>
@@ -59,5 +60,7 @@
     </table>
 
     <a href="{{ path('app_smartphone_new') }}"><button class="ec-btn mt-3 w-25">{{ button_label|default('Ajouter') }}</button></a>
+
+    </section>
 
 {% endblock %}
