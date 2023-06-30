@@ -1,3 +1,4 @@
+
 {{ form_start(form) }}
 <div class="mb-3">
 {{ form_row(form.model,{'label_attr': {'class':'sr-only'},
@@ -19,6 +20,7 @@
     </h6>
     <div class="ms-3">
         {{ form_row(form.storage, {'label_attr' : {'class':'sr-only'}, 'attr': {'class': 'ec-rounded-dropdown'}}) }}
+        {{ form_errors(form.storage) }}
     </div>
 </div>
 
@@ -28,6 +30,7 @@
     </h6>
     <div class="ms-3">
         {{ form_row(form.phoneCondition, {'label_attr' : {'class':'sr-only'}, 'attr': {'class': 'ec-rounded-dropdown'}}) }}
+        {{ form_errors(form.phoneCondition) }}
     </div>
 </div>
 
