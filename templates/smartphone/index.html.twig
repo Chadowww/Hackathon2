@@ -3,17 +3,19 @@
 {% block title %}Smartphone index{% endblock %}
 
 {% block body %}
-    <h1>Smartphone index</h1>
+<div style="width: 82vw; min-height: 80vh" id="ec-background">
 
-    <table class="table">
+<h1 class="display-1 fw-bold">Smartphone index</h1>
+
+    <table class="table shadow-lg">
         <thead>
             <tr>
                 <th>Id</th>
                 <th>Model</th>
                 <th>IsSold</th>
                 <th>HasCharger</th>
-                <th>CreatedAt</th>
-                <th>UpdatedAt</th>
+                <th >CreatedAt</th>
+                <th  >UpdatedAt</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -24,11 +26,16 @@
                 <td>{{ smartphone.model}}</td>
                 <td>{{ smartphone.isSold ? 'Yes' : 'No' }}</td>
                 <td>{{ smartphone.hasCharger ? 'Yes' : 'No' }}</td>
-                <td>{{ smartphone.createdAt ? smartphone.createdAt|date('Y-m-d H:i:s') : '' }}</td>
-                <td>{{ smartphone.updatedAt ? smartphone.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
+                <td >{{ smartphone.createdAt ? smartphone.createdAt|date('Y-m-d
+                H:i:s') :
+                    '' }}</td>
+                <td >{{ smartphone.updatedAt ? smartphone.updatedAt|date('Y-m-d H:i:s') :
+                    '' }}</td>
                 <td>
-                    <a href="{{ path('app_smartphone_show', {'id': smartphone.id}) }}">show</a>
-                    <a href="{{ path('app_smartphone_edit', {'id': smartphone.id}) }}">edit</a>
+                    <a href="{{ path('app_smartphone_show', {'id': smartphone.id}) }}" class="ec-btn text-center w-25
+">Voir</a>
+                    <a href="{{ path('app_smartphone_edit', {'id': smartphone.id}) }}" class="ec-btn text-center w-25
+">Editer</a>
                 </td>
             </tr>
         {% else %}
@@ -39,5 +46,6 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_smartphone_new') }}">Create new</a>
+    <a href="{{ path('app_smartphone_new') }}" class="ec-btn text-center w-25">Ajouter un nouveau mobile</a>
+</div>
 {% endblock %}

@@ -3,7 +3,13 @@
 {% block title %}Smartphone{% endblock %}
 
 {% block body %}
-{#        {{ dump() }}#}
+<div style="width: 82vw; min-height: 80vh" id="ec-background">
+
+{% for message in app.flashes('success') %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+    {% endfor %}
     <section class="ce-main-container-show m-auto p-3">
         <div class="d-flex justify-content-center">
         <h1 class="mb-3 mt-3">{{ details.data.items[0].product.model }}</h1>
@@ -56,5 +62,5 @@
         </div>
     </section>
 
-
+</div>
 {% endblock %}

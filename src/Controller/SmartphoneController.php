@@ -12,7 +12,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Http\Attribute\IsGranted;
 
+#[isGranted('ROLE_USER')]
 #[Route('/smartphone')]
 class SmartphoneController extends AbstractController
 {
@@ -23,7 +25,6 @@ class SmartphoneController extends AbstractController
             'smartphones' => $smartphoneRepository->findAll(),
         ]);
     }
-
     #[Route('/new', name: 'app_smartphone_new', methods: ['GET', 'POST'])]
     public function new(
         Request $request,
@@ -38,9 +39,16 @@ class SmartphoneController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $apiServices = new APIServices();
             $resultRequest = $apiServices->getIdProduct($form->get('model')->getData());
-
             $idAPI= $resultRequest['data']['items'][0]['product']['id'];
             $phone= $apiServices->getDetailsProduct($idAPI);
+
+            $wireless = $phone['data']['items'][0]['key_aspects']['wireless_&_cellular'];
+
+            if(!preg_match("/\b(?:4G|5G|6G)\b/", $wireless))
+            {
+                $this->addFlash('error', 'Ce téléphone n\'est pas compatible nos critères de reprise');
+                return $this->redirectToRoute('app_smartphone_new');
+            }
 
             $memory = $phone['data']['items'][0]['key_aspects']['ram'];
             $numericValue = intval(preg_replace('/[^0-9]/', '', $memory));
@@ -48,7 +56,15 @@ class SmartphoneController extends AbstractController
             $date = DateTimeImmutable::createFromFormat('Y-m-d', $releaseDate);
 
             $smartphone->setmodel($form->get('model')->getData());
-            $smartphone->sethasCharger($form->get('hasCharger')->getData());
+
+
+            if ($form->get('hasCharger')->getData() === true) {
+                $smartphone->setHasCharger($form->get('hasCharger')->getData());
+            }elseif ($form->get('hasCharger')->getData() === false){
+                $this->addFlash('warning', 'Vous devez avoir un chargeur pour vendre votre téléphone');
+                return $this->redirectToRoute('app_smartphone_new');
+            }
+
             $smartphone->setstorage($form->get('storage')->getData());
             $smartphone->setMemory($numericValue);
             $smartphone->setReleaseDate($date);
@@ -62,7 +78,7 @@ class SmartphoneController extends AbstractController
 
             $id = $smartphone->getId();
             $categoryCalculatorService->calculateCategory($id);
-
+            $this->addFlash('success', 'Votre téléphone a bien été ajouté');
             return $this->redirectToRoute('app_smartphone_show', [
                 'id' => $id,
                 'smartphone' => $smartphone,

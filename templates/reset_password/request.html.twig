@@ -3,6 +3,8 @@
 {% block title %}Reset your password{% endblock %}
 
 {% block body %}
+<div style="width: 82vw; min-height: 80vh" id="ec-background">
+
 <div class=" ce-container-login container d-flex flex-column justify-content-center align-items-center ">
 
 {% for flash_error in app.flashes('reset_password_error') %}
@@ -21,5 +23,6 @@
 
         <button class="ec-secondary-button m-auto p-2 w-75">Envoyer le mail de réinitialisation </button>
     {{ form_end(requestForm) }}
+</div>
 </div>
 {% endblock %}

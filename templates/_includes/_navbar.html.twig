@@ -13,14 +13,18 @@
 
     <ul class="nav my-5 sm-mb_3" id="ec-li-nav">
         <ul class="nav d-flex flex-column" id="ec-nav-link-new">
+
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                <li class="nav-item">
+                    <a href="{{ path('app_smartphone_new') }}" class="nav-link text-light font-italic"> <i class="fa-solid fa-plus text-light fa-fw"></i>&nbsp;&nbsp;Nouvelle entrée </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ path('app_smartphone_index') }}" class="nav-link text-light font-italic"> <i class="fa-solid fa-list text-light fa-fw"></i>&nbsp;&nbsp;Index</a>
+                </li>
+            {% endif %}
+
             <li class="nav-item">
-                <a href="{{ path('app_smartphone_new') }}" class="nav-link text-light font-italic"> <i class="fa-solid fa-plus text-light fa-fw"></i>&nbsp;&nbsp;Nouvelle entrée </a>
-            </li>
-            <li class="nav-item">
-                <a href="{{ path('app_smartphone_index') }}" class="nav-link text-light font-italic"> <i class="fa-solid fa-list text-light fa-fw"></i>&nbsp;&nbsp;Index</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link text-light font-italic"><i
+                <a href="{# {{ path('app_faq') }} #}" class="nav-link text-light font-italic"><i
                             class="fa-solid fa-question text-light fa-fw"></i>&nbsp;&nbsp;FAQ</a>
             </li>
         </ul>

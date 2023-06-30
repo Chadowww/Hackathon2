@@ -4,3 +4,13 @@
   border-radius: $border-radius;
   width: 20vw;
 }
+@media screen and (max-width: 768px) {
+    .ema-input-main{
+        width: initial;
+    }
+    #sidebarCollapse{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+}

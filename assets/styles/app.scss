@@ -16,7 +16,7 @@
 a{
     text-decoration: none;
 }
-#ec-background{
+#ec-background {
     background-image: url("../images/LogoEmmausConnect.png");
     background-repeat: no-repeat;
     background-position: center center;
@@ -24,5 +24,6 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
 }
-
