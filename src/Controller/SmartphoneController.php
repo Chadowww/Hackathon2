@@ -12,6 +12,8 @@ use DateTimeImmutable;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Session\Session;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Attribute\IsGranted;
 
@@ -40,7 +42,8 @@ class SmartphoneController extends AbstractController
         Request $request,
         SmartphoneRepository $smartphoneRepository,
         APIServices $APIServices,
-        CategoryCalculatorService $categoryCalculatorService): Response
+        CategoryCalculatorService $categoryCalculatorService,
+        SessionInterface $session): Response
     {
         $smartphone = new Smartphone();
         $form = $this->createForm(SmartphoneType::class, $smartphone);
@@ -50,6 +53,9 @@ class SmartphoneController extends AbstractController
             $apiServices = new APIServices();
             $resultRequest = $apiServices->getIdProduct($form->get('model')->getData());
             $idAPI= $resultRequest['data']['items'][0]['product']['id'];
+
+            $session->getFlashBag()->add($idAPI, 'idAPI');
+
             $phone= $apiServices->getDetailsProduct($idAPI);
 
             $wireless = $phone['data']['items'][0]['key_aspects']['wireless_&_cellular'];

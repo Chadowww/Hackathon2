@@ -19,7 +19,7 @@ class APIServices{
         //      $response = $client->request('POST', 'https://api.techspecs.io/v4/product/search?query=' . $model, [
         //  'headers' => [
         //      'Accept-Encoding' => 'gzip, deflate',
-        //      'Authorization' => 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImN1c19PQWxkY284TUZRUUpTbyIsIm1vZXNpZlByaWNpbmdJZCI6InByaWNlXzFNUXF5dkJESWxQbVVQcE1NNWc2RmVvbyIsImlhdCI6MTY4ODA2NTMyOX0.yjoZ6S5xZ51VuBsMgQzYDAoWHFyxtjRdcpGkEzvxHuI',
+        //      'Authorization' => 'api key',
         //      'accept' => 'application/json',
         //  ],
         //  ]);
@@ -44,7 +44,7 @@ class APIServices{
         // $response = $client->request('GET', $requete, [
         //  'headers' => [
         //      'Accept-Encoding' => 'gzip, deflate',
-        //      'Authorization' => 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImN1c19PQWxkY284TUZRUUpTbyIsIm1vZXNpZlByaWNpbmdJZCI6InByaWNlXzFNUXF5dkJESWxQbVVQcE1NNWc2RmVvbyIsImlhdCI6MTY4ODA2NTMyOX0.yjoZ6S5xZ51VuBsMgQzYDAoWHFyxtjRdcpGkEzvxHuI',
+        //      'Authorization' => 'api key',
         //   'accept' => 'application/json',
         //  ],
         //  ]);
